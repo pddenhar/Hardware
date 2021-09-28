@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name Connector_Automotive)(type Legacy)(uri U:/git/speeduino_kicad_lib/Connector_Automotive/Connector_Automotive.lib)(options "")(descr ""))
+  (lib (name IC_Automotive)(type Legacy)(uri U:/git/speeduino_kicad_lib/IC_Automotive/IC_Automotive.lib)(options "")(descr ""))
+  (lib (name Misc)(type Legacy)(uri U:/git/speeduino_kicad_lib/Misc/Misc.lib)(options "")(descr ""))
+  (lib (name Shields)(type Legacy)(uri U:/git/speeduino_kicad_lib/Shields/Shields.lib)(options "")(descr ""))
+)
