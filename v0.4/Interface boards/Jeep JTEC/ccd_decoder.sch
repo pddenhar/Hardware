@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Jeep JTEC-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -38,6 +39,8 @@ F 0 "R1" H 1220 1396 50  0000 L CNN
 F 1 "10k" H 1220 1305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 1080 1350 50  0001 C CNN
 F 3 "~" H 1150 1350 50  0001 C CNN
+F 4 "Yageo" H 1150 1350 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 1150 1350 50  0001 C CNN "Manufacturer#"
 	1    1150 1350
 	1    0    0    -1  
 $EndComp
@@ -87,6 +90,8 @@ F 0 "Q2" H 2405 1554 50  0000 L CNN
 F 1 "IRF7317" H 2405 1645 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2400 1525 50  0001 L CNN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf7309ipbf.pdf" H 2300 1600 50  0001 L CNN
+F 4 "Infineon" H 2200 1600 50  0001 C CNN "Manufacturer"
+F 5 "IRF7317TRPBF" H 2200 1600 50  0001 C CNN "Manufacturer#"
 	2    2200 1600
 	1    0    0    1   
 $EndComp
@@ -98,6 +103,8 @@ F 0 "Q2" H 2405 2446 50  0000 L CNN
 F 1 "IRF7317" H 2405 2355 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2400 2325 50  0001 L CNN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf7309ipbf.pdf" H 2300 2400 50  0001 L CNN
+F 4 "Infineon" H 2200 2400 50  0001 C CNN "Manufacturer"
+F 5 "IRF7317TRPBF" H 2200 2400 50  0001 C CNN "Manufacturer#"
 	1    2200 2400
 	1    0    0    -1  
 $EndComp
@@ -116,6 +123,8 @@ F 0 "R2" H 1770 2146 50  0000 L CNN
 F 1 "10k" H 1770 2055 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 1630 2100 50  0001 C CNN
 F 3 "~" H 1700 2100 50  0001 C CNN
+F 4 "Yageo" H 1700 2100 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 1700 2100 50  0001 C CNN "Manufacturer#"
 	1    1700 2100
 	1    0    0    -1  
 $EndComp
@@ -164,6 +173,8 @@ F 0 "R3" V 2600 1900 50  0000 C CNN
 F 1 "360" V 2500 1900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 2530 1900 50  0001 C CNN
 F 3 "~" H 2600 1900 50  0001 C CNN
+F 4 "Yageo" H 2600 1900 50  0001 C CNN "Manufacturer"
+F 5 "RC0805JR-07360RL" H 2600 1900 50  0001 C CNN "Manufacturer#"
 	1    2600 1900
 	0    1    1    0   
 $EndComp
@@ -177,6 +188,8 @@ F 0 "R4" V 2600 2100 50  0000 C CNN
 F 1 "360" V 2500 2100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 2530 2100 50  0001 C CNN
 F 3 "~" H 2600 2100 50  0001 C CNN
+F 4 "Yageo" H 2600 2100 50  0001 C CNN "Manufacturer"
+F 5 "RC0805JR-07360RL" H 2600 2100 50  0001 C CNN "Manufacturer#"
 	1    2600 2100
 	0    1    -1   0   
 $EndComp
@@ -264,6 +277,8 @@ F 0 "C4" H 5815 2796 50  0000 L CNN
 F 1 "0.1u" H 5815 2705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5738 2600 50  0001 C CNN
 F 3 "~" H 5700 2750 50  0001 C CNN
+F 4 "Kemet" H 5700 2750 50  0001 C CNN "Manufacturer"
+F 5 "C0805C104K5RACTU" H 5700 2750 50  0001 C CNN "Manufacturer#"
 	1    5700 2750
 	1    0    0    -1  
 $EndComp
@@ -308,6 +323,8 @@ F 0 "R6" H 5220 1746 50  0000 L CNN
 F 1 "10k" H 5220 1655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 5080 1700 50  0001 C CNN
 F 3 "~" H 5150 1700 50  0001 C CNN
+F 4 "Yageo" H 5150 1700 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 5150 1700 50  0001 C CNN "Manufacturer#"
 	1    5150 1700
 	1    0    0    -1  
 $EndComp
@@ -345,9 +362,11 @@ L Power_Protection:USBLC6-2P6 U2
 U 1 1 615A235D
 P 8050 1950
 F 0 "U2" H 8300 2300 50  0000 C CNN
-F 1 "USBLC6-2P6" H 7600 2300 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 7600 2300 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-666" H 8050 1450 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 8250 2300 50  0001 C CNN
+F 4 "STMicroelectronics" H 8050 1950 50  0001 C CNN "Manufacturer"
+F 5 "USBLC6-2SC6" H 8050 1950 50  0001 C CNN "Manufacturer#"
 	1    8050 1950
 	1    0    0    -1  
 $EndComp
@@ -397,6 +416,8 @@ F 0 "R7" H 7470 2096 50  0000 L CNN
 F 1 "10" H 7470 2005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 7330 2050 50  0001 C CNN
 F 3 "~" H 7400 2050 50  0001 C CNN
+F 4 "Yageo" H 7400 2050 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710RL" H 7400 2050 50  0001 C CNN "Manufacturer#"
 	1    7400 2050
 	0    1    1    0   
 $EndComp
@@ -410,6 +431,8 @@ F 0 "R8" H 8770 2096 50  0000 L CNN
 F 1 "10" H 8770 2005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 8630 2050 50  0001 C CNN
 F 3 "~" H 8700 2050 50  0001 C CNN
+F 4 "Yageo" H 8700 2050 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710RL" H 8700 2050 50  0001 C CNN "Manufacturer#"
 	1    8700 2050
 	0    1    1    0   
 $EndComp
@@ -459,6 +482,8 @@ F 0 "R9" H 9870 1446 50  0000 L CNN
 F 1 "13k" H 9870 1355 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9730 1400 50  0001 C CNN
 F 3 "~" H 9800 1400 50  0001 C CNN
+F 4 "Panasonic" H 9800 1400 50  0001 C CNN "Manufacturer"
+F 5 "ERJ-6ENF1302V" H 9800 1400 50  0001 C CNN "Manufacturer#"
 	1    9800 1400
 	1    0    0    -1  
 $EndComp
@@ -472,6 +497,8 @@ F 0 "R10" H 9870 1996 50  0000 L CNN
 F 1 "120" H 9870 1905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9730 1950 50  0001 C CNN
 F 3 "~" H 9800 1950 50  0001 C CNN
+F 4 "Panasonic" H 9800 1950 50  0001 C CNN "Manufacturer"
+F 5 "ERJP6WF1200V" H 9800 1950 50  0001 C CNN "Manufacturer#"
 	1    9800 1950
 	1    0    0    -1  
 $EndComp
@@ -485,6 +512,8 @@ F 0 "R11" H 9870 2546 50  0000 L CNN
 F 1 "13k" H 9870 2455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 9730 2500 50  0001 C CNN
 F 3 "~" H 9800 2500 50  0001 C CNN
+F 4 "Panasonic" H 9800 2500 50  0001 C CNN "Manufacturer"
+F 5 "ERJ-6ENF1302V" H 9800 2500 50  0001 C CNN "Manufacturer#"
 	1    9800 2500
 	1    0    0    -1  
 $EndComp
@@ -512,6 +541,9 @@ F 0 "JP1" H 10250 1885 50  0000 C CNN
 F 1 "NO" H 10250 1794 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10250 1700 50  0001 C CNN
 F 3 "~" H 10250 1700 50  0001 C CNN
+F 4 "10129378-902001BLF" H 10250 1700 50  0001 C CNN "Manufacturer"
+F 5 "Amphenol ICC (FCI)" H 10250 1700 50  0001 C CNN "Manufacturer#"
+F 6 "10129378-902001BLF-ND" H 10250 1700 50  0001 C CNN "digikey#"
 	1    10250 1700
 	1    0    0    -1  
 $EndComp
@@ -525,6 +557,9 @@ F 0 "JP2" H 10250 2385 50  0000 C CNN
 F 1 "NO" H 10250 2294 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10250 2200 50  0001 C CNN
 F 3 "~" H 10250 2200 50  0001 C CNN
+F 4 "10129378-902001BLF" H 10250 2200 50  0001 C CNN "Manufacturer"
+F 5 "Amphenol ICC (FCI)" H 10250 2200 50  0001 C CNN "Manufacturer#"
+F 6 "10129378-902001BLF-ND" H 10250 2200 50  0001 C CNN "digikey#"
 	1    10250 2200
 	1    0    0    -1  
 $EndComp
@@ -538,6 +573,8 @@ F 0 "C5" H 7165 2446 50  0000 L CNN
 F 1 "3.3n" H 7165 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 7088 2250 50  0001 C CNN
 F 3 "~" H 7050 2400 50  0001 C CNN
+F 4 "TDK" H 7050 2400 50  0001 C CNN "Manufacturer"
+F 5 "C2012C0G1H332J060AA" H 7050 2400 50  0001 C CNN "Manufacturer#"
 	1    7050 2400
 	1    0    0    -1  
 $EndComp
@@ -552,6 +589,8 @@ F 0 "C6" H 9115 2496 50  0000 L CNN
 F 1 "3.3n" H 9115 2405 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 9038 2300 50  0001 C CNN
 F 3 "~" H 9000 2450 50  0001 C CNN
+F 4 "TDK" H 9000 2450 50  0001 C CNN "Manufacturer"
+F 5 "C2012C0G1H332J060AA" H 9000 2450 50  0001 C CNN "Manufacturer#"
 	1    9000 2450
 	-1   0    0    -1  
 $EndComp

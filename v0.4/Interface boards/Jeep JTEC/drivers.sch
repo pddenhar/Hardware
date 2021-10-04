@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Jeep JTEC-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -74,6 +75,8 @@ F 0 "Q3" H 2405 2096 50  0000 L CNN
 F 1 "IRF540NPBF" H 2405 2005 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2450 1975 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 2200 2050 50  0001 L CNN
+F 4 "Infineon" H 2200 2050 50  0001 C CNN "Manufacturer"
+F 5 "IRF540NPBF" H 2200 2050 50  0001 C CNN "Manufacturer#"
 	1    2200 2050
 	1    0    0    -1  
 $EndComp
@@ -101,6 +104,8 @@ F 0 "R12" H 1970 2346 50  0000 L CNN
 F 1 "10k" H 1970 2255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 1830 2300 50  0001 C CNN
 F 3 "~" H 1900 2300 50  0001 C CNN
+F 4 "Yageo" H 1900 2300 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 1900 2300 50  0001 C CNN "Manufacturer#"
 	1    1900 2300
 	1    0    0    -1  
 $EndComp
@@ -114,6 +119,8 @@ F 0 "Q5" H 4205 2096 50  0000 L CNN
 F 1 "IRF540NPBF" H 4205 2005 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4250 1975 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 4000 2050 50  0001 L CNN
+F 4 "Infineon" H 4000 2050 50  0001 C CNN "Manufacturer"
+F 5 "IRF540NPBF" H 4000 2050 50  0001 C CNN "Manufacturer#"
 	1    4000 2050
 	1    0    0    -1  
 $EndComp
@@ -141,6 +148,8 @@ F 0 "R14" H 3770 2346 50  0000 L CNN
 F 1 "10k" H 3770 2255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 3630 2300 50  0001 C CNN
 F 3 "~" H 3700 2300 50  0001 C CNN
+F 4 "Yageo" H 3700 2300 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 3700 2300 50  0001 C CNN "Manufacturer#"
 	1    3700 2300
 	1    0    0    -1  
 $EndComp
@@ -154,6 +163,8 @@ F 0 "Q7" H 5955 2096 50  0000 L CNN
 F 1 "IRF540NPBF" H 5955 2005 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6000 1975 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 5750 2050 50  0001 L CNN
+F 4 "Infineon" H 5750 2050 50  0001 C CNN "Manufacturer"
+F 5 "IRF540NPBF" H 5750 2050 50  0001 C CNN "Manufacturer#"
 	1    5750 2050
 	1    0    0    -1  
 $EndComp
@@ -181,6 +192,8 @@ F 0 "R16" H 5520 2346 50  0000 L CNN
 F 1 "10k" H 5520 2255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 5380 2300 50  0001 C CNN
 F 3 "~" H 5450 2300 50  0001 C CNN
+F 4 "Yageo" H 5450 2300 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 5450 2300 50  0001 C CNN "Manufacturer#"
 	1    5450 2300
 	1    0    0    -1  
 $EndComp
@@ -265,6 +278,8 @@ F 0 "Q4" H 2855 4746 50  0000 L CNN
 F 1 "IRF540NPBF" H 2855 4655 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2900 4625 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 2650 4700 50  0001 L CNN
+F 4 "Infineon" H 2650 4700 50  0001 C CNN "Manufacturer"
+F 5 "IRF540NPBF" H 2650 4700 50  0001 C CNN "Manufacturer#"
 	1    2650 4700
 	1    0    0    -1  
 $EndComp
@@ -292,6 +307,8 @@ F 0 "R13" H 2420 4996 50  0000 L CNN
 F 1 "10k" H 2420 4905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 2280 4950 50  0001 C CNN
 F 3 "~" H 2350 4950 50  0001 C CNN
+F 4 "Yageo" H 2350 4950 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 2350 4950 50  0001 C CNN "Manufacturer#"
 	1    2350 4950
 	1    0    0    -1  
 $EndComp
@@ -305,6 +322,8 @@ F 0 "Q6" H 4955 4746 50  0000 L CNN
 F 1 "IRF540NPBF" H 4955 4655 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5000 4625 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 4750 4700 50  0001 L CNN
+F 4 "Infineon" H 4750 4700 50  0001 C CNN "Manufacturer"
+F 5 "IRF540NPBF" H 4750 4700 50  0001 C CNN "Manufacturer#"
 	1    4750 4700
 	1    0    0    -1  
 $EndComp
@@ -332,6 +351,8 @@ F 0 "R15" H 4520 4996 50  0000 L CNN
 F 1 "10k" H 4520 4905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 4380 4950 50  0001 C CNN
 F 3 "~" H 4450 4950 50  0001 C CNN
+F 4 "Yageo" H 4450 4950 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 4450 4950 50  0001 C CNN "Manufacturer#"
 	1    4450 4950
 	1    0    0    -1  
 $EndComp
@@ -371,6 +392,8 @@ F 0 "Q8" H 7655 4746 50  0000 L CNN
 F 1 "IRF540NPBF" H 7655 4655 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7700 4625 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 7450 4700 50  0001 L CNN
+F 4 "Infineon" H 7450 4700 50  0001 C CNN "Manufacturer"
+F 5 "IRF540NPBF" H 7450 4700 50  0001 C CNN "Manufacturer#"
 	1    7450 4700
 	1    0    0    -1  
 $EndComp
@@ -398,6 +421,8 @@ F 0 "R17" H 7220 4996 50  0000 L CNN
 F 1 "10k" H 7220 4905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 7080 4950 50  0001 C CNN
 F 3 "~" H 7150 4950 50  0001 C CNN
+F 4 "Yageo" H 7150 4950 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 7150 4950 50  0001 C CNN "Manufacturer#"
 	1    7150 4950
 	1    0    0    -1  
 $EndComp

@@ -1,6 +1,6 @@
 (sym_lib_table
-  (lib (name Misc)(type Legacy)(uri C:/Users/pdden/Documents/git/speeduino-kicad-parts/Misc/Misc.lib)(options "")(descr ""))
-  (lib (name IC_Automotive)(type Legacy)(uri C:/Users/pdden/Documents/git/speeduino-kicad-parts/IC_Automotive/IC_Automotive.lib)(options "")(descr ""))
-  (lib (name Connector_Automotive)(type Legacy)(uri C:/Users/pdden/Documents/git/speeduino-kicad-parts/Connector_Automotive/Connector_Automotive.lib)(options "")(descr ""))
-  (lib (name Shields)(type Legacy)(uri C:/Users/pdden/Documents/git/speeduino-kicad-parts/Shields/Shields.lib)(options "")(descr ""))
+  (lib (name Misc)(type Legacy)(uri ${SPEEDUINO_LIB_DIR}/Misc/Misc.lib)(options "")(descr ""))
+  (lib (name IC_Automotive)(type Legacy)(uri ${SPEEDUINO_LIB_DIR}/IC_Automotive/IC_Automotive.lib)(options "")(descr ""))
+  (lib (name Connector_Automotive)(type Legacy)(uri ${SPEEDUINO_LIB_DIR}/Connector_Automotive/Connector_Automotive.lib)(options "")(descr ""))
+  (lib (name Shields)(type Legacy)(uri ${SPEEDUINO_LIB_DIR}/Shields/Shields.lib)(options "")(descr ""))
 )

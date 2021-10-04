@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Jeep JTEC-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -63,6 +64,9 @@ F 0 "J1" H 1800 3117 50  0000 C CNN
 F 1 "Conn_02x20_Counter_Clockwise" H 1800 3026 50  0000 C CNN
 F 2 "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical" H 1750 2000 50  0001 C CNN
 F 3 "~" H 1750 2000 50  0001 C CNN
+F 4 "302-S401" H 1750 2000 50  0001 C CNN "Manufacturer"
+F 5 "	On Shore Technology Inc." H 1750 2000 50  0001 C CNN "Manufacturer#"
+F 6 "ED10529-ND" H 1750 2000 50  0001 C CNN "digikey#"
 	1    1750 2000
 	1    0    0    -1  
 $EndComp
@@ -773,6 +777,8 @@ F 0 "R5" H 3170 5596 50  0000 L CNN
 F 1 "10k" H 3170 5505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 3030 5550 50  0001 C CNN
 F 3 "~" H 3100 5550 50  0001 C CNN
+F 4 "Yageo" H 3100 5550 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 3100 5550 50  0001 C CNN "Manufacturer#"
 	1    3100 5550
 	1    0    0    -1  
 $EndComp
@@ -872,6 +878,8 @@ F 0 "R18" H 6020 6646 50  0000 L CNN
 F 1 "10k" H 6020 6555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 5880 6600 50  0001 C CNN
 F 3 "~" H 5950 6600 50  0001 C CNN
+F 4 "Yageo" H 5950 6600 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 5950 6600 50  0001 C CNN "Manufacturer#"
 	1    5950 6600
 	1    0    0    1   
 $EndComp
