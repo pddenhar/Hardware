@@ -323,6 +323,28 @@ X D6 9 -500 0 100 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
+# Misc_D_Zener_SOT-23
+#
+DEF Misc_D_Zener_SOT-23 D 0 10 N N 1 F N
+F0 "D" 0 90 50 H V C CNN
+F1 "Misc_D_Zener_SOT-23" 0 -90 50 H V C CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 30 0 -30 0 N
+P 3 0 1 10 -10 40 -30 40 -30 -40 N
+P 4 0 1 10 30 40 -30 0 30 -40 30 40 N
+X A 1 100 0 70 L 50 50 1 1 P
+X K 3 -100 0 70 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Power_Protection_USBLC6-2P6
 #
 DEF Power_Protection_USBLC6-2P6 U 0 20 Y N 1 F N

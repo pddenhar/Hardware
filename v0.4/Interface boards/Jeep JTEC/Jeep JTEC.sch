@@ -394,7 +394,7 @@ Text GLabel 4900 1700 0    50   Input ~ 0
 CRANK-IN
 Wire Wire Line
 	5000 1700 4900 1700
-Text Notes 4500 4750 0    50   ~ 0
+Text Notes 4150 2000 2    50   ~ 0
 CRANK and CAM sensors\nare hall effect on JTEC 4.0L [1]\n\nPull-up is required
 Text Notes 550  7650 0    39   ~ 0
 Reference 1: https://www.cherokeeforum.com/f67/guide-megasquirt-4-0-a-254321/\nReference 2: https://mopar1973man.com/cummins/articles.html/24-valve-2nd-generation_50/51_engine/electrical/ccd-chrysler-collision-detection-data-bus-r329/\nReference 3: https://azxiana.io/2017/04/09/creating-a-chrysler-pcmecu-simulator/
@@ -561,7 +561,7 @@ Wire Wire Line
 	9250 2100 9350 2100
 Text GLabel 1600 4000 2    50   Input ~ 0
 ASD_12V_IN
-Text GLabel 7050 1900 0    50   Output ~ 0
+Text GLabel 9250 3400 0    50   Output ~ 0
 GENERATOR_12v+
 Wire Wire Line
 	7050 1900 7150 1900
@@ -590,7 +590,7 @@ Wire Wire Line
 	1400 4900 1500 4900
 Wire Wire Line
 	1400 5100 1500 5100
-Text GLabel 9250 3400 0    50   Output ~ 0
+Text GLabel 7050 1900 0    50   Output ~ 0
 GENERATOR_GND
 Wire Wire Line
 	9250 3400 9350 3400
@@ -628,111 +628,80 @@ Italic labels indicate signals that are not used\non this breakout board
 $Comp
 L MCU_Module:Arduino_Nano_v3.x A1
 U 1 1 6153DDCF
-P 6000 6050
-F 0 "A1" H 6350 5100 50  0000 C CNN
-F 1 "Arduino_Nano_v3.x" H 5500 5100 50  0000 C CNN
-F 2 "Module:Arduino_Nano" H 6000 6050 50  0001 C CIN
-F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 6000 6050 50  0001 C CNN
-	1    6000 6050
+P 5450 5800
+F 0 "A1" H 5800 4850 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 4950 4850 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 5450 5800 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5450 5800 50  0001 C CNN
+	1    5450 5800
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 900  5800 1250 950 
-U 615FCF77
-F0 "CCD Decoder" 50
-F1 "ccd_decoder.sch" 50
-F2 "CCD-" B R 2150 6100 50 
-F3 "CCD+" B R 2150 6000 50 
-F4 "CCD_TX" I R 2150 6200 50 
-F5 "CCD_RX" I R 2150 6300 50 
-$EndSheet
 Wire Wire Line
-	5500 5750 4400 5750
+	4950 5500 3850 5500
 Wire Wire Line
-	4400 5750 4400 6300
-Wire Wire Line
-	4400 6300 2150 6300
-Wire Wire Line
-	5500 6650 4400 6650
-Wire Wire Line
-	5500 6550 4500 6550
-Wire Wire Line
-	4500 6550 4500 6200
-Wire Wire Line
-	4500 6200 2150 6200
+	4950 6400 3850 6400
 Text GLabel 9250 3700 0    50   BiDi ~ 10
 CCD-
 Text GLabel 9250 3900 0    50   BiDi ~ 10
 CCD+
-Text GLabel 2250 6000 2    50   BiDi ~ 0
-CCD+
-Wire Wire Line
-	2250 6000 2150 6000
-Text GLabel 2250 6100 2    50   BiDi ~ 0
-CCD-
-Wire Wire Line
-	2150 6100 2250 6100
-Wire Wire Line
-	4400 6300 4400 6650
-Connection ~ 4400 6300
 Text GLabel 9250 3500 0    50   Input ~ 10
 FUEL_LEVEL
-Text GLabel 6600 6050 2    50   Input ~ 10
+Text GLabel 6050 5800 2    50   Input ~ 10
 FUEL_LEVEL
 Wire Wire Line
-	6500 6050 6600 6050
+	5950 5800 6050 5800
 $Comp
-L power:VDDA #PWR?
+L power:VDDA #PWR017
 U 1 1 61616827
-P 6200 4950
-F 0 "#PWR?" H 6200 4800 50  0001 C CNN
-F 1 "VDDA" V 6218 5078 50  0000 L CNN
-F 2 "" H 6200 4950 50  0001 C CNN
-F 3 "" H 6200 4950 50  0001 C CNN
-	1    6200 4950
+P 5650 4700
+F 0 "#PWR017" H 5650 4550 50  0001 C CNN
+F 1 "VDDA" V 5668 4828 50  0000 L CNN
+F 2 "" H 5650 4700 50  0001 C CNN
+F 3 "" H 5650 4700 50  0001 C CNN
+	1    5650 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6200 5050 6200 4950
+	5650 4800 5650 4700
 $Comp
-L power:GNDA #PWR?
+L power:GNDA #PWR016
 U 1 1 6161D4CA
-P 6100 7250
-F 0 "#PWR?" H 6100 7000 50  0001 C CNN
-F 1 "GNDA" V 6105 7122 50  0000 R CNN
-F 2 "" H 6100 7250 50  0001 C CNN
-F 3 "" H 6100 7250 50  0001 C CNN
-	1    6100 7250
+P 5550 7000
+F 0 "#PWR016" H 5550 6750 50  0001 C CNN
+F 1 "GNDA" V 5555 6872 50  0000 R CNN
+F 2 "" H 5550 7000 50  0001 C CNN
+F 3 "" H 5550 7000 50  0001 C CNN
+	1    5550 7000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 7150 6100 7050
+	5550 6900 5550 6800
 Wire Wire Line
-	6100 7150 6000 7150
+	5550 6900 5450 6900
 Wire Wire Line
-	6000 7150 6000 7050
-Connection ~ 6100 7150
+	5450 6900 5450 6800
+Connection ~ 5550 6900
 Wire Wire Line
-	6100 7250 6100 7150
+	5550 7000 5550 6900
 Wire Wire Line
-	6600 6150 6500 6150
+	6050 5900 5950 5900
 Text GLabel 9250 4100 0    50   Input ~ 10
 SPEED_CONTROL_SWITCH
-Text GLabel 6600 6150 2    50   Input ~ 10
+Text GLabel 6050 5900 2    50   Input ~ 10
 SPEED_CONTROL_SWITCH
 Text GLabel 7050 3200 0    50   Input ~ 10
 OIL_PRESSURE_IN
-Text GLabel 6600 6250 2    50   Input ~ 10
+Text GLabel 6050 6000 2    50   Input ~ 10
 OIL_PRESSURE_IN
 Wire Wire Line
-	6600 6250 6500 6250
+	6050 6000 5950 6000
 Text GLabel 7050 3600 0    50   Input ~ 0
 VSS
-Text GLabel 5400 5650 0    50   Input ~ 0
+Text GLabel 4850 5400 0    50   Input ~ 0
 VSS
 Wire Wire Line
-	5400 5650 5500 5650
-Text Notes 5150 5700 2    50   ~ 0
+	4850 5400 4950 5400
+Text Notes 4600 5450 2    50   ~ 0
 D2 and D3 are INT pins
 Text GLabel 7050 1300 0    50   Output ~ 0
 INJ-1-OUT
@@ -792,39 +761,39 @@ Text GLabel 9250 3200 0    50   Input Italic 0
 AC_SELECT
 Text GLabel 9250 3300 0    50   Input ~ 10
 BRAKE_LAMP_SWITCH
-Text GLabel 3800 5850 0    50   Input ~ 10
+Text GLabel 3250 5600 0    50   Input ~ 10
 BRAKE_LAMP_SWITCH
 $Comp
 L Device:R_Small R?
 U 1 1 6173A1FE
-P 3950 5700
+P 3400 5450
 AR Path="/615FCF77/6173A1FE" Ref="R?"  Part="1" 
-AR Path="/6173A1FE" Ref="R?"  Part="1" 
-F 0 "R?" H 4020 5746 50  0000 L CNN
-F 1 "10k" H 4020 5655 50  0000 L CNN
-F 2 "" V 3880 5700 50  0001 C CNN
-F 3 "~" H 3950 5700 50  0001 C CNN
-	1    3950 5700
+AR Path="/6173A1FE" Ref="R5"  Part="1" 
+F 0 "R5" H 3470 5496 50  0000 L CNN
+F 1 "10k" H 3470 5405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3330 5450 50  0001 C CNN
+F 3 "~" H 3400 5450 50  0001 C CNN
+	1    3400 5450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 5550 3950 5600
+	3400 5300 3400 5350
 Wire Wire Line
-	3950 5800 3950 5850
+	3400 5550 3400 5600
 Wire Wire Line
-	5500 5850 3950 5850
-Connection ~ 3950 5850
+	4950 5600 3400 5600
+Connection ~ 3400 5600
 Wire Wire Line
-	3950 5850 3800 5850
+	3400 5600 3250 5600
 $Comp
-L power:VDDA #PWR?
+L power:VDDA #PWR015
 U 1 1 617EB87A
-P 3950 5550
-F 0 "#PWR?" H 3950 5400 50  0001 C CNN
-F 1 "VDDA" V 3968 5678 50  0000 L CNN
-F 2 "" H 3950 5550 50  0001 C CNN
-F 3 "" H 3950 5550 50  0001 C CNN
-	1    3950 5550
+P 3400 5300
+F 0 "#PWR015" H 3400 5150 50  0001 C CNN
+F 1 "VDDA" V 3418 5428 50  0000 L CNN
+F 2 "" H 3400 5300 50  0001 C CNN
+F 3 "" H 3400 5300 50  0001 C CNN
+	1    3400 5300
 	1    0    0    -1  
 $EndComp
 Text Notes 9650 1400 0    50   ~ 0
@@ -847,14 +816,14 @@ Wire Wire Line
 	10500 5800 10600 5800
 Wire Wire Line
 	10600 5900 10500 5900
-Text GLabel 5400 5950 0    50   Input Italic 0
+Text GLabel 4850 5700 0    50   Input Italic 0
 CRUISE_VAC_CONTROL
 Wire Wire Line
-	5400 5950 5500 5950
-Text GLabel 5400 6050 0    50   Input Italic 0
+	4850 5700 4950 5700
+Text GLabel 4850 5800 0    50   Input Italic 0
 CRUISE_VENT_CONTROL
 Wire Wire Line
-	5400 6050 5500 6050
+	4850 5800 4950 5800
 Text GLabel 8550 5800 0    50   Input Italic 0
 CRUISE_VAC_CONTROL
 Wire Wire Line
@@ -878,5 +847,90 @@ F8 "CRUISE_VAC_CONTROL" I L 8650 5800 50
 F9 "CRUISE_VAC_OUT" I R 10500 5800 50 
 F10 "CRUISE_VENT_CONTROL" I L 8650 5900 50 
 F11 "CRUISE_VENT_OUT" I R 10500 5900 50 
+F12 "GENERATOR_CONTROL" I L 8650 6100 50 
+F13 "GENERATOR_DRIVER" I R 10500 6100 50 
 $EndSheet
+Text GLabel 10600 6100 2    50   Output ~ 0
+GENERATOR_GND
+Wire Wire Line
+	10600 6100 10500 6100
+Text GLabel 4850 5900 0    50   Input Italic 0
+GENERATOR_CONTROL
+Wire Wire Line
+	4850 5900 4950 5900
+Text GLabel 8550 6100 0    50   Input Italic 0
+GENERATOR_CONTROL
+Wire Wire Line
+	8550 6100 8650 6100
+$Comp
+L Device:R_Small R?
+U 1 1 618ADDF1
+P 6250 6500
+AR Path="/615FCF77/618ADDF1" Ref="R?"  Part="1" 
+AR Path="/618ADDF1" Ref="R18"  Part="1" 
+F 0 "R18" H 6320 6546 50  0000 L CNN
+F 1 "10k" H 6320 6455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6180 6500 50  0001 C CNN
+F 3 "~" H 6250 6500 50  0001 C CNN
+	1    6250 6500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6250 6100 6250 6400
+Wire Wire Line
+	6250 6600 6250 6900
+Wire Wire Line
+	6250 6900 5550 6900
+Wire Wire Line
+	6250 6100 5950 6100
+Connection ~ 6250 6100
+Wire Wire Line
+	3250 6200 3350 6200
+Text GLabel 3350 6200 2    50   BiDi ~ 0
+CCD-
+Wire Wire Line
+	3350 6100 3250 6100
+Text GLabel 3350 6100 2    50   BiDi ~ 0
+CCD+
+$Sheet
+S 2000 5900 1250 950 
+U 615FCF77
+F0 "CCD Decoder" 50
+F1 "ccd_decoder.sch" 50
+F2 "CCD-" B R 3250 6200 50 
+F3 "CCD+" B R 3250 6100 50 
+F4 "CCD_TX" I R 3250 6300 50 
+F5 "CCD_RX" I R 3250 6400 50 
+$EndSheet
+Wire Wire Line
+	3850 5500 3850 6400
+Wire Wire Line
+	3850 6400 3250 6400
+Connection ~ 3850 6400
+Wire Wire Line
+	3250 6300 4950 6300
+$Comp
+L Misc:D_Zener_SOT-23 D1
+U 1 1 618B7D29
+P 7200 6200
+F 0 "D1" H 7200 5993 50  0000 C CNN
+F 1 "10V" H 7200 6084 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" V 7200 6200 50  0001 C CNN
+F 3 "~" V 7200 6200 50  0001 C CNN
+F 4 "BZX84-C10,215" H 7200 6200 50  0001 C CNN "Manufacturer"
+F 5 "Nexperia USA Inc." H 7200 6200 50  0001 C CNN "Manufacturer#"
+F 6 "1727-2935-1-ND" H 7200 6200 50  0001 C CNN "digikey#"
+	1    7200 6200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7300 6200 7400 6200
+Wire Wire Line
+	6800 6100 6800 6200
+Wire Wire Line
+	6800 6200 7100 6200
+Wire Wire Line
+	6250 6100 6800 6100
+Text GLabel 7400 6200 2    50   Input ~ 0
+ASD_12V_IN
 $EndSCHEMATC
