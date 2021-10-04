@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name Connector_Automotive)(type KiCad)(uri C:/Users/pdden/Documents/git/speeduino-kicad-parts/Connector_Automotive/Connector_Automotive.pretty)(options "")(descr ""))
+  (lib (name IC_Automotive)(type KiCad)(uri C:/Users/pdden/Documents/git/speeduino-kicad-parts/IC_Automotive/IC_Automotive.pretty)(options "")(descr ""))
+  (lib (name Misc)(type KiCad)(uri C:/Users/pdden/Documents/git/speeduino-kicad-parts/Misc/Misc.pretty)(options "")(descr ""))
+  (lib (name Shields)(type KiCad)(uri C:/Users/pdden/Documents/git/speeduino-kicad-parts/Shields/Shields.pretty)(options "")(descr ""))
+)

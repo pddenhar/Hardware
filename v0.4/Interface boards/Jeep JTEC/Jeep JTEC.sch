@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "Jeep JTEC Breakout"
 Date "2021-09-28"
 Rev "A"
@@ -56,7 +56,7 @@ CRANK-IN
 Text GLabel 2100 2850 2    50   Input ~ 0
 CAM-IN
 $Comp
-L Connector_Generic:Conn_02x20_Counter_Clockwise J1
+L Connector_Generic:Conn_02x20_Odd_Even J1
 U 1 1 5CF56B69
 P 1700 2150
 F 0 "J1" H 1750 3267 50  0000 C CNN
@@ -246,7 +246,7 @@ U 1 1 615581AE
 P 5200 2500
 F 0 "C1" H 5280 2492 50  0000 L CNN
 F 1 "Conn_01x32" H 5280 2401 50  0000 L CNN
-F 2 "" H 5200 2500 50  0001 C CNN
+F 2 "Connector_Automotive:mopar_32pin_pcm" H 5200 2500 50  0001 C CNN
 F 3 "~" H 5200 2500 50  0001 C CNN
 	1    5200 2500
 	1    0    0    -1  
@@ -254,53 +254,49 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x32 C2
 U 1 1 61562915
-P 7700 2500
-F 0 "C2" H 7780 2492 50  0000 L CNN
-F 1 "Conn_01x32" H 7780 2401 50  0000 L CNN
-F 2 "" H 7700 2500 50  0001 C CNN
-F 3 "~" H 7700 2500 50  0001 C CNN
-	1    7700 2500
+P 7350 2500
+F 0 "C2" H 7430 2492 50  0000 L CNN
+F 1 "Conn_01x32" H 7430 2401 50  0000 L CNN
+F 2 "Connector_Automotive:mopar_32pin_pcm" H 7350 2500 50  0001 C CNN
+F 3 "~" H 7350 2500 50  0001 C CNN
+	1    7350 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x32 C3
 U 1 1 61568D86
-P 9900 2500
-F 0 "C3" H 9980 2492 50  0000 L CNN
-F 1 "Conn_01x32" H 9980 2401 50  0000 L CNN
-F 2 "" H 9900 2500 50  0001 C CNN
-F 3 "~" H 9900 2500 50  0001 C CNN
-	1    9900 2500
+P 9550 2500
+F 0 "C3" H 9630 2492 50  0000 L CNN
+F 1 "Conn_01x32" H 9630 2401 50  0000 L CNN
+F 2 "Connector_Automotive:mopar_32pin_pcm" H 9550 2500 50  0001 C CNN
+F 3 "~" H 9550 2500 50  0001 C CNN
+	1    9550 2500
 	1    0    0    -1  
 $EndComp
-Text GLabel 9550 2800 0    50   Output ~ 0
+Text GLabel 9200 2800 0    50   Output ~ 0
 FUELPUMP-OUT
 Wire Wire Line
-	9700 2800 9550 2800
-Text GLabel 7400 1300 0    50   Output ~ 0
-INJ-1-OUT
+	9350 2800 9200 2800
 Wire Wire Line
-	7400 1300 7500 1300
-Text GLabel 7400 2100 0    50   Output ~ 0
-INJ-1-OUT
+	7050 1300 7150 1300
 Wire Wire Line
-	7400 2100 7500 2100
-Text GLabel 7400 2400 0    50   Output ~ 0
+	7050 2100 7150 2100
+Text GLabel 7050 2400 0    50   Output ~ 0
 INJ-2-OUT
 Wire Wire Line
-	7500 2400 7400 2400
-Text GLabel 7400 1500 0    50   Output ~ 0
+	7150 2400 7050 2400
+Text GLabel 7050 1500 0    50   Output ~ 0
 INJ-2-OUT
 Wire Wire Line
-	7500 1500 7400 1500
-Text GLabel 7400 1400 0    50   Output ~ 0
+	7150 1500 7050 1500
+Text GLabel 7050 1400 0    50   Output ~ 0
 INJ-3-OUT
 Wire Wire Line
-	7400 1400 7500 1400
-Text GLabel 7400 2500 0    50   Output ~ 0
+	7050 1400 7150 1400
+Text GLabel 7050 2500 0    50   Output ~ 0
 INJ-3-OUT
 Wire Wire Line
-	7400 2500 7500 2500
+	7050 2500 7150 2500
 $Comp
 L power:GNDA #PWR07
 U 1 1 615AA12C
@@ -346,22 +342,22 @@ Wire Wire Line
 $Comp
 L power:VDDA #PWR011
 U 1 1 615C91A8
-P 7400 4000
-F 0 "#PWR011" H 7400 3850 50  0001 C CNN
-F 1 "VDDA" V 7418 4128 50  0000 L CNN
-F 2 "" H 7400 4000 50  0001 C CNN
-F 3 "" H 7400 4000 50  0001 C CNN
-	1    7400 4000
+P 7050 4000
+F 0 "#PWR011" H 7050 3850 50  0001 C CNN
+F 1 "VDDA" V 7068 4128 50  0000 L CNN
+F 2 "" H 7050 4000 50  0001 C CNN
+F 3 "" H 7050 4000 50  0001 C CNN
+	1    7050 4000
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7400 4000 7500 4000
+	7050 4000 7150 4000
 Wire Wire Line
-	7400 3600 7500 3600
-Text GLabel 7400 2000 0    50   Output ~ 0
+	7050 3600 7150 3600
+Text GLabel 7050 2000 0    50   Output ~ 0
 TCC_OUT
 Wire Wire Line
-	7400 2000 7500 2000
+	7050 2000 7150 2000
 Text GLabel 1500 4450 0    50   Input ~ 0
 TCC_OUT
 Wire Wire Line
@@ -386,9 +382,9 @@ Wire Wire Line
 	5000 2900 4900 2900
 Text Notes 4800 800  0    200  ~ 0
 Black
-Text Notes 7250 800  0    200  ~ 0
+Text Notes 6900 800  0    200  ~ 0
 White
-Text Notes 9400 800  0    200  ~ 0
+Text Notes 9050 800  0    200  ~ 0
 Gray
 Text GLabel 4900 2700 0    50   Input ~ 0
 CAM-IN
@@ -404,14 +400,14 @@ Text Notes 550  7650 0    39   ~ 0
 Reference 1: https://www.cherokeeforum.com/f67/guide-megasquirt-4-0-a-254321/\nReference 2: https://mopar1973man.com/cummins/articles.html/24-valve-2nd-generation_50/51_engine/electrical/ccd-chrysler-collision-detection-data-bus-r329/\nReference 3: https://azxiana.io/2017/04/09/creating-a-chrysler-pcmecu-simulator/
 Text GLabel 1400 4900 0    50   Input ~ 0
 ASD_COIL_OUT
-Text GLabel 9600 1800 0    50   Output ~ 0
+Text GLabel 9250 1800 0    50   Output ~ 0
 O2-RELAY-DOWN
 Wire Wire Line
-	9600 1800 9700 1800
-Text GLabel 9600 1700 0    50   Output ~ 0
+	9250 1800 9350 1800
+Text GLabel 9250 1700 0    50   Output ~ 0
 O2-RELAY-UP
 Wire Wire Line
-	9600 1700 9700 1700
+	9250 1700 9350 1700
 Text GLabel 1400 5100 0    50   Input ~ 0
 O2-RELAY-DOWN
 Text GLabel 4900 1100 0    50   Input ~ 0
@@ -481,10 +477,10 @@ NoConn ~ 5000 3700
 NoConn ~ 5000 3900
 NoConn ~ 5000 2200
 NoConn ~ 5000 2300
-Text GLabel 9600 1200 0    50   Output ~ 0
+Text GLabel 9250 1200 0    50   Output ~ 0
 ASD_COIL_OUT
 Wire Wire Line
-	9700 1200 9600 1200
+	9350 1200 9250 1200
 NoConn ~ 5000 1200
 NoConn ~ 5000 1400
 NoConn ~ 5000 1800
@@ -497,97 +493,78 @@ Text GLabel 4900 3100 0    50   Input ~ 0
 Wire Wire Line
 	4900 3100 5000 3100
 NoConn ~ 5000 3000
-NoConn ~ 7500 1000
-NoConn ~ 7500 1100
-NoConn ~ 7500 1200
-NoConn ~ 7500 1600
-NoConn ~ 7500 1700
-NoConn ~ 7500 1800
-NoConn ~ 7500 2200
-NoConn ~ 7500 2300
-NoConn ~ 7500 2600
-NoConn ~ 7500 2700
-NoConn ~ 7500 2800
-NoConn ~ 7500 2900
-NoConn ~ 7500 3000
-NoConn ~ 7500 3100
-NoConn ~ 7500 3300
-NoConn ~ 7500 3400
-NoConn ~ 7500 3500
+NoConn ~ 7150 1000
+NoConn ~ 7150 1100
+NoConn ~ 7150 1200
+NoConn ~ 7150 1600
+NoConn ~ 7150 1700
+NoConn ~ 7150 2200
+NoConn ~ 7150 2300
+NoConn ~ 7150 2600
+NoConn ~ 7150 2700
+NoConn ~ 7150 2800
+NoConn ~ 7150 2900
+NoConn ~ 7150 3000
+NoConn ~ 7150 3100
+NoConn ~ 7150 3300
+NoConn ~ 7150 3400
+NoConn ~ 7150 3500
 Wire Wire Line
-	7500 3200 7400 3200
-NoConn ~ 7500 3700
-NoConn ~ 7500 3800
-NoConn ~ 7500 3900
-NoConn ~ 7500 4100
-Text GLabel 9600 1100 0    50   Output ~ 0
+	7150 3200 7050 3200
+NoConn ~ 7150 3700
+NoConn ~ 7150 3800
+NoConn ~ 7150 3900
+NoConn ~ 7150 4100
+Text GLabel 9250 1100 0    50   Output ~ 0
 FAN-OUT
 Wire Wire Line
-	9700 1100 9600 1100
-NoConn ~ 9700 1500
-NoConn ~ 9700 1600
-NoConn ~ 9700 2500
-NoConn ~ 9700 2600
-NoConn ~ 9700 2700
-NoConn ~ 9700 3000
-NoConn ~ 9700 4000
-Text HLabel 9600 3700 0    50   BiDi ~ 0
-CCD-
-Text HLabel 9600 3900 0    50   BiDi ~ 0
-CCD+
-NoConn ~ 9700 3800
-Text HLabel 9600 4100 0    50   Input ~ 0
-SPEED_CONTROL_SWITCH
-Text HLabel 9600 3300 0    50   Input ~ 0
-BRAKE_LAMP_SWITCH
-Text Notes 10000 3350 0    50   ~ 0
+	9350 1100 9250 1100
+NoConn ~ 9350 1500
+NoConn ~ 9350 1600
+NoConn ~ 9350 2500
+NoConn ~ 9350 2600
+NoConn ~ 9350 2700
+NoConn ~ 9350 3000
+NoConn ~ 9350 4000
+NoConn ~ 9350 3800
+Text Notes 9650 3400 0    50   ~ 0
 Brake lamp switch sense\nis normally grounded
-Text HLabel 9600 1300 0    50   Output ~ 0
-CRUISE_VACUUM
-Text HLabel 9600 1400 0    50   Output ~ 0
-CRUISE_VENT
-Text GLabel 9600 2000 0    50   Output ~ 0
+Text GLabel 9250 2000 0    50   Output ~ 0
 CRUISE_PWR_OUT
 Wire Wire Line
-	9600 2000 9700 2000
+	9250 2000 9350 2000
 Text GLabel 1400 4000 0    50   Input ~ 0
 CRUISE_PWR_OUT
 Wire Wire Line
 	1400 4000 1500 4000
 Wire Wire Line
-	9600 1300 9700 1300
+	9250 1300 9350 1300
 Wire Wire Line
-	9600 1400 9700 1400
+	9250 1400 9350 1400
 Wire Wire Line
-	9600 3300 9700 3300
+	9250 3300 9350 3300
 Wire Wire Line
-	9600 3700 9700 3700
+	9250 3700 9350 3700
 Wire Wire Line
-	9600 3900 9700 3900
+	9250 3900 9350 3900
 Wire Wire Line
-	9600 4100 9700 4100
-Text HLabel 9600 3200 0    50   Input ~ 0
-AC_SELECT
-Text HLabel 9600 3100 0    50   Input ~ 0
-AC_PRESSURE_SWITCH
+	9250 4100 9350 4100
 Wire Wire Line
-	9600 3100 9700 3100
+	9250 3100 9350 3100
 Wire Wire Line
-	9600 3200 9700 3200
+	9250 3200 9350 3200
 Wire Wire Line
-	9700 1000 9600 1000
-Text HLabel 9600 1000 0    50   Output ~ 0
-AC_CLUTCH_OUT
-Text GLabel 9600 2100 0    50   Input ~ 0
+	9350 1000 9250 1000
+Text GLabel 9250 2100 0    50   Input ~ 0
 ASD_12V_IN
 Wire Wire Line
-	9600 2100 9700 2100
+	9250 2100 9350 2100
 Text GLabel 1600 4000 2    50   Input ~ 0
 ASD_12V_IN
-Text GLabel 7400 1900 0    50   Output ~ 0
+Text GLabel 7050 1900 0    50   Output ~ 0
 GENERATOR_12v+
 Wire Wire Line
-	7400 1900 7500 1900
+	7050 1900 7150 1900
 Text GLabel 1400 4100 0    50   Input ~ 0
 GENERATOR_12v+
 Wire Wire Line
@@ -613,62 +590,293 @@ Wire Wire Line
 	1400 4900 1500 4900
 Wire Wire Line
 	1400 5100 1500 5100
-Text GLabel 9600 3400 0    50   Output ~ 0
+Text GLabel 9250 3400 0    50   Output ~ 0
 GENERATOR_GND
 Wire Wire Line
-	9600 3400 9700 3400
+	9250 3400 9350 3400
 Text GLabel 1500 4600 0    50   Input ~ 0
 GENERATOR_GND
 Text GLabel 1600 4600 2    50   Input ~ 0
 HC-2-OUT
 Wire Wire Line
 	1600 4600 1500 4600
-Text HLabel 9600 3500 0    50   Input ~ 0
-FUEL_LEVEL
 Wire Wire Line
-	9600 3500 9700 3500
-NoConn ~ 9700 3600
-Text GLabel 9550 2900 0    50   Output ~ 0
+	9250 3500 9350 3500
+NoConn ~ 9350 3600
+Text GLabel 9200 2900 0    50   Output ~ 0
 EVAP_SOLENOID
 Wire Wire Line
-	9550 2900 9700 2900
-Text GLabel 9600 2200 0    50   Input Italic 0
+	9200 2900 9350 2900
+Text GLabel 9250 2200 0    50   Input Italic 0
 RAD_FAN_REQUEST
 Wire Wire Line
-	9600 2200 9700 2200
-Text GLabel 9600 2300 0    50   Input Italic 0
+	9250 2200 9350 2200
+Text GLabel 9250 2300 0    50   Input Italic 0
 LEAK_DETECT_SWITCH_SENSE
-Text GLabel 9600 2400 0    50   Input Italic 0
+Text GLabel 9250 2400 0    50   Input Italic 0
 BATTERY_TEMP
 Wire Wire Line
-	9600 2300 9700 2300
+	9250 2300 9350 2300
 Wire Wire Line
-	9600 2400 9700 2400
-Text GLabel 9600 1900 0    50   Output Italic 0
+	9250 2400 9350 2400
+Text GLabel 9250 1900 0    50   Output Italic 0
 LEAK_DETECT_SOLENOID
 Wire Wire Line
-	9600 1900 9700 1900
-Text Notes 7700 4600 0    50   Italic 0
+	9250 1900 9350 1900
+Text Notes 7350 4600 0    50   Italic 0
 Italic labels indicate signals that are not used\non this breakout board
 $Comp
 L MCU_Module:Arduino_Nano_v3.x A1
 U 1 1 6153DDCF
-P 6550 5450
-F 0 "A1" H 6550 4361 50  0000 C CNN
-F 1 "Arduino_Nano_v3.x" H 6550 4270 50  0000 C CNN
-F 2 "Module:Arduino_Nano" H 6550 5450 50  0001 C CIN
-F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 6550 5450 50  0001 C CNN
-	1    6550 5450
+P 6000 6050
+F 0 "A1" H 6350 5100 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 5500 5100 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 6000 6050 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 6000 6050 50  0001 C CNN
+	1    6000 6050
 	1    0    0    -1  
 $EndComp
-Text HLabel 7400 3600 0    50   Input Italic 0
-VSS
-Text HLabel 7400 3200 0    50   Input Italic 0
-OIL_PRESSURE_IN
 $Sheet
-S 8800 5200 1250 950 
+S 900  5800 1250 950 
 U 615FCF77
 F0 "CCD Decoder" 50
 F1 "ccd_decoder.sch" 50
+F2 "CCD-" B R 2150 6100 50 
+F3 "CCD+" B R 2150 6000 50 
+F4 "CCD_TX" I R 2150 6200 50 
+F5 "CCD_RX" I R 2150 6300 50 
+$EndSheet
+Wire Wire Line
+	5500 5750 4400 5750
+Wire Wire Line
+	4400 5750 4400 6300
+Wire Wire Line
+	4400 6300 2150 6300
+Wire Wire Line
+	5500 6650 4400 6650
+Wire Wire Line
+	5500 6550 4500 6550
+Wire Wire Line
+	4500 6550 4500 6200
+Wire Wire Line
+	4500 6200 2150 6200
+Text GLabel 9250 3700 0    50   BiDi ~ 10
+CCD-
+Text GLabel 9250 3900 0    50   BiDi ~ 10
+CCD+
+Text GLabel 2250 6000 2    50   BiDi ~ 0
+CCD+
+Wire Wire Line
+	2250 6000 2150 6000
+Text GLabel 2250 6100 2    50   BiDi ~ 0
+CCD-
+Wire Wire Line
+	2150 6100 2250 6100
+Wire Wire Line
+	4400 6300 4400 6650
+Connection ~ 4400 6300
+Text GLabel 9250 3500 0    50   Input ~ 10
+FUEL_LEVEL
+Text GLabel 6600 6050 2    50   Input ~ 10
+FUEL_LEVEL
+Wire Wire Line
+	6500 6050 6600 6050
+$Comp
+L power:VDDA #PWR?
+U 1 1 61616827
+P 6200 4950
+F 0 "#PWR?" H 6200 4800 50  0001 C CNN
+F 1 "VDDA" V 6218 5078 50  0000 L CNN
+F 2 "" H 6200 4950 50  0001 C CNN
+F 3 "" H 6200 4950 50  0001 C CNN
+	1    6200 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 5050 6200 4950
+$Comp
+L power:GNDA #PWR?
+U 1 1 6161D4CA
+P 6100 7250
+F 0 "#PWR?" H 6100 7000 50  0001 C CNN
+F 1 "GNDA" V 6105 7122 50  0000 R CNN
+F 2 "" H 6100 7250 50  0001 C CNN
+F 3 "" H 6100 7250 50  0001 C CNN
+	1    6100 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 7150 6100 7050
+Wire Wire Line
+	6100 7150 6000 7150
+Wire Wire Line
+	6000 7150 6000 7050
+Connection ~ 6100 7150
+Wire Wire Line
+	6100 7250 6100 7150
+Wire Wire Line
+	6600 6150 6500 6150
+Text GLabel 9250 4100 0    50   Input ~ 10
+SPEED_CONTROL_SWITCH
+Text GLabel 6600 6150 2    50   Input ~ 10
+SPEED_CONTROL_SWITCH
+Text GLabel 7050 3200 0    50   Input ~ 10
+OIL_PRESSURE_IN
+Text GLabel 6600 6250 2    50   Input ~ 10
+OIL_PRESSURE_IN
+Wire Wire Line
+	6600 6250 6500 6250
+Text GLabel 7050 3600 0    50   Input ~ 0
+VSS
+Text GLabel 5400 5650 0    50   Input ~ 0
+VSS
+Wire Wire Line
+	5400 5650 5500 5650
+Text Notes 5150 5700 2    50   ~ 0
+D2 and D3 are INT pins
+Text GLabel 7050 1300 0    50   Output ~ 0
+INJ-1-OUT
+Text GLabel 7050 2100 0    50   Output ~ 0
+INJ-1-OUT
+Text GLabel 10600 5400 2    50   Output ~ 0
+IGN-1-DRIVER
+Text GLabel 10600 5500 2    50   Output ~ 0
+IGN-2-DRIVER
+Text GLabel 10600 5600 2    50   Output ~ 0
+IGN-3-DRIVER
+Text GLabel 8550 5500 0    50   Input ~ 0
+IGN-2-OUT
+Text GLabel 8550 5600 0    50   Input ~ 0
+IGN-3-OUT
+Text GLabel 8550 5400 0    50   Input ~ 0
+IGN-1-OUT
+Wire Wire Line
+	8550 5400 8650 5400
+Wire Wire Line
+	8650 5500 8550 5500
+Wire Wire Line
+	8550 5600 8650 5600
+Text GLabel 4900 1600 0    50   Output ~ 0
+IGN-1-DRIVER
+Wire Wire Line
+	4900 1600 5000 1600
+Text GLabel 7050 1800 0    50   Output ~ 0
+IGN-2-DRIVER
+Wire Wire Line
+	7050 1800 7150 1800
+Text GLabel 4900 1000 0    50   Output ~ 0
+IGN-3-DRIVER
+Wire Wire Line
+	4900 1000 5000 1000
+Text GLabel 4900 1500 0    50   Input Italic 0
+PNP_SW
+Wire Wire Line
+	4900 1500 5000 1500
+Text Notes 9650 3200 0    50   ~ 0
+AC_SELECT grounded when on
+Text Notes 9650 3100 0    50   ~ 0
+Pressure switch grounded when ok
+Text Notes 9650 1000 0    50   ~ 0
+AC clutch grounded = On
+Text GLabel 9250 1000 0    50   Input ~ 0
+AC_CLUTCH_OUT
+Text GLabel 9250 3100 0    50   Input ~ 0
+AC_PRESSURE_SWITCH
+Text GLabel 1500 5300 0    50   Input ~ 0
+AC_PRESSURE_SWITCH
+Text GLabel 1600 5300 2    50   Input ~ 0
+AC_CLUTCH_OUT
+Wire Wire Line
+	1500 5300 1600 5300
+Text GLabel 9250 3200 0    50   Input Italic 0
+AC_SELECT
+Text GLabel 9250 3300 0    50   Input ~ 10
+BRAKE_LAMP_SWITCH
+Text GLabel 3800 5850 0    50   Input ~ 10
+BRAKE_LAMP_SWITCH
+$Comp
+L Device:R_Small R?
+U 1 1 6173A1FE
+P 3950 5700
+AR Path="/615FCF77/6173A1FE" Ref="R?"  Part="1" 
+AR Path="/6173A1FE" Ref="R?"  Part="1" 
+F 0 "R?" H 4020 5746 50  0000 L CNN
+F 1 "10k" H 4020 5655 50  0000 L CNN
+F 2 "" V 3880 5700 50  0001 C CNN
+F 3 "~" H 3950 5700 50  0001 C CNN
+	1    3950 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5550 3950 5600
+Wire Wire Line
+	3950 5800 3950 5850
+Wire Wire Line
+	5500 5850 3950 5850
+Connection ~ 3950 5850
+Wire Wire Line
+	3950 5850 3800 5850
+$Comp
+L power:VDDA #PWR?
+U 1 1 617EB87A
+P 3950 5550
+F 0 "#PWR?" H 3950 5400 50  0001 C CNN
+F 1 "VDDA" V 3968 5678 50  0000 L CNN
+F 2 "" H 3950 5550 50  0001 C CNN
+F 3 "" H 3950 5550 50  0001 C CNN
+	1    3950 5550
+	1    0    0    -1  
+$EndComp
+Text Notes 9650 1400 0    50   ~ 0
+Solenoid grounded = On
+Wire Wire Line
+	10500 5400 10600 5400
+Wire Wire Line
+	10500 5500 10600 5500
+Wire Wire Line
+	10500 5600 10600 5600
+Text GLabel 9250 1300 0    50   Output Italic 0
+CRUISE_VAC_OUT
+Text GLabel 9250 1400 0    50   Output Italic 0
+CRUISE_VENT_OUT
+Text GLabel 10600 5800 2    50   Output Italic 0
+CRUISE_VAC_OUT
+Text GLabel 10600 5900 2    50   Output Italic 0
+CRUISE_VENT_OUT
+Wire Wire Line
+	10500 5800 10600 5800
+Wire Wire Line
+	10600 5900 10500 5900
+Text GLabel 5400 5950 0    50   Input Italic 0
+CRUISE_VAC_CONTROL
+Wire Wire Line
+	5400 5950 5500 5950
+Text GLabel 5400 6050 0    50   Input Italic 0
+CRUISE_VENT_CONTROL
+Wire Wire Line
+	5400 6050 5500 6050
+Text GLabel 8550 5800 0    50   Input Italic 0
+CRUISE_VAC_CONTROL
+Wire Wire Line
+	8550 5800 8650 5800
+Text GLabel 8550 5900 0    50   Input Italic 0
+CRUISE_VENT_CONTROL
+Wire Wire Line
+	8550 5900 8650 5900
+$Sheet
+S 8650 5300 1850 950 
+U 6169594B
+F0 "Drivers" 50
+F1 "drivers.sch" 50
+F2 "IGN-1-OUT" I L 8650 5400 50 
+F3 "IGN-1-DRIVER" I R 10500 5400 50 
+F4 "IGN-2-OUT" I L 8650 5500 50 
+F5 "IGN-2-DRIVER" I R 10500 5500 50 
+F6 "IGN-3-DRIVER" I R 10500 5600 50 
+F7 "IGN-3-OUT" I L 8650 5600 50 
+F8 "CRUISE_VAC_CONTROL" I L 8650 5800 50 
+F9 "CRUISE_VAC_OUT" I R 10500 5800 50 
+F10 "CRUISE_VENT_CONTROL" I L 8650 5900 50 
+F11 "CRUISE_VENT_OUT" I R 10500 5900 50 
 $EndSheet
 $EndSCHEMATC
