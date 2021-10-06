@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Jeep JTEC-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -941,4 +940,72 @@ Wire Wire Line
 	5950 6200 6500 6200
 Text GLabel 7100 6300 2    50   Input ~ 0
 ASD_12V_IN
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 61A64B30
+P 1450 5250
+F 0 "J?" H 1530 5242 50  0000 L CNN
+F 1 "12v SW Output" H 1530 5151 50  0000 L CNN
+F 2 "" H 1450 5250 50  0001 C CNN
+F 3 "~" H 1450 5250 50  0001 C CNN
+	1    1450 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 5250 1150 5250
+Wire Wire Line
+	1250 5350 1150 5350
+$Comp
+L power:GND #PWR?
+U 1 1 61A7A083
+P 1150 5250
+F 0 "#PWR?" H 1150 5000 50  0001 C CNN
+F 1 "GND" V 1155 5122 50  0000 R CNN
+F 2 "" H 1150 5250 50  0001 C CNN
+F 3 "" H 1150 5250 50  0001 C CNN
+	1    1150 5250
+	0    1    1    0   
+$EndComp
+Text GLabel 1150 5350 0    50   Input ~ 0
+12V-SW
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 61A8768C
+P 1300 5750
+F 0 "JP?" H 1300 5935 50  0000 C CNN
+F 1 "NO" H 1300 5844 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1300 5750 50  0001 C CNN
+F 3 "~" H 1300 5750 50  0001 C CNN
+F 4 "10129378-902001BLF" H 1300 5750 50  0001 C CNN "Manufacturer"
+F 5 "Amphenol ICC (FCI)" H 1300 5750 50  0001 C CNN "Manufacturer#"
+F 6 "10129378-902001BLF-ND" H 1300 5750 50  0001 C CNN "digikey#"
+	1    1300 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 5750 1200 5750
+Wire Wire Line
+	1400 5750 1500 5750
+$Comp
+L power:GND #PWR?
+U 1 1 61A9CEE4
+P 1100 5750
+F 0 "#PWR?" H 1100 5500 50  0001 C CNN
+F 1 "GND" V 1105 5622 50  0000 R CNN
+F 2 "" H 1100 5750 50  0001 C CNN
+F 3 "" H 1100 5750 50  0001 C CNN
+	1    1100 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 61A9D2A5
+P 1500 5750
+F 0 "#PWR?" H 1500 5500 50  0001 C CNN
+F 1 "GNDA" V 1505 5622 50  0000 R CNN
+F 2 "" H 1500 5750 50  0001 C CNN
+F 3 "" H 1500 5750 50  0001 C CNN
+	1    1500 5750
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
