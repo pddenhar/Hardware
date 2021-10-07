@@ -941,12 +941,12 @@ Wire Wire Line
 Text GLabel 7100 6300 2    50   Input ~ 0
 ASD_12V_IN
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J2
 U 1 1 61A64B30
 P 1450 5250
-F 0 "J?" H 1530 5242 50  0000 L CNN
+F 0 "J2" H 1530 5242 50  0000 L CNN
 F 1 "12v SW Output" H 1530 5151 50  0000 L CNN
-F 2 "" H 1450 5250 50  0001 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-GF-3.81_1x02_P3.81mm_Vertical_ThreadedFlange_MountHole" H 1450 5250 50  0001 C CNN
 F 3 "~" H 1450 5250 50  0001 C CNN
 	1    1450 5250
 	1    0    0    -1  
@@ -956,10 +956,10 @@ Wire Wire Line
 Wire Wire Line
 	1250 5350 1150 5350
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 61A7A083
 P 1150 5250
-F 0 "#PWR?" H 1150 5000 50  0001 C CNN
+F 0 "#PWR0101" H 1150 5000 50  0001 C CNN
 F 1 "GND" V 1155 5122 50  0000 R CNN
 F 2 "" H 1150 5250 50  0001 C CNN
 F 3 "" H 1150 5250 50  0001 C CNN
@@ -969,10 +969,10 @@ $EndComp
 Text GLabel 1150 5350 0    50   Input ~ 0
 12V-SW
 $Comp
-L Device:Jumper_NO_Small JP?
+L Device:Jumper_NO_Small JP3
 U 1 1 61A8768C
 P 1300 5750
-F 0 "JP?" H 1300 5935 50  0000 C CNN
+F 0 "JP3" H 1300 5935 50  0000 C CNN
 F 1 "NO" H 1300 5844 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1300 5750 50  0001 C CNN
 F 3 "~" H 1300 5750 50  0001 C CNN
@@ -987,10 +987,10 @@ Wire Wire Line
 Wire Wire Line
 	1400 5750 1500 5750
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 61A9CEE4
 P 1100 5750
-F 0 "#PWR?" H 1100 5500 50  0001 C CNN
+F 0 "#PWR0102" H 1100 5500 50  0001 C CNN
 F 1 "GND" V 1105 5622 50  0000 R CNN
 F 2 "" H 1100 5750 50  0001 C CNN
 F 3 "" H 1100 5750 50  0001 C CNN
@@ -998,14 +998,80 @@ F 3 "" H 1100 5750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GNDA #PWR?
+L power:GNDA #PWR0103
 U 1 1 61A9D2A5
 P 1500 5750
-F 0 "#PWR?" H 1500 5500 50  0001 C CNN
+F 0 "#PWR0103" H 1500 5500 50  0001 C CNN
 F 1 "GNDA" V 1505 5622 50  0000 R CNN
 F 2 "" H 1500 5750 50  0001 C CNN
 F 3 "" H 1500 5750 50  0001 C CNN
 	1    1500 5750
 	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 615F1836
+P 600 6650
+F 0 "H3" H 700 6696 50  0000 L CNN
+F 1 "MountingHole" H 700 6605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 600 6650 50  0001 C CNN
+F 3 "~" H 600 6650 50  0001 C CNN
+	1    600  6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 615F1BA5
+P 600 6850
+F 0 "H4" H 700 6896 50  0000 L CNN
+F 1 "MountingHole" H 700 6805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 600 6850 50  0001 C CNN
+F 3 "~" H 600 6850 50  0001 C CNN
+	1    600  6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 615F1E09
+P 600 7050
+F 0 "H5" H 700 7096 50  0000 L CNN
+F 1 "MountingHole" H 700 7005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 600 7050 50  0001 C CNN
+F 3 "~" H 600 7050 50  0001 C CNN
+	1    600  7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 615F2008
+P 600 7250
+F 0 "H6" H 700 7296 50  0000 L CNN
+F 1 "MountingHole" H 700 7205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 600 7250 50  0001 C CNN
+F 3 "~" H 600 7250 50  0001 C CNN
+	1    600  7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 615F22EE
+P 600 6450
+F 0 "H2" H 700 6496 50  0000 L CNN
+F 1 "MountingHole" H 700 6405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 600 6450 50  0001 C CNN
+F 3 "~" H 600 6450 50  0001 C CNN
+	1    600  6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 615F25BB
+P 600 6250
+F 0 "H1" H 700 6296 50  0000 L CNN
+F 1 "MountingHole" H 700 6205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 600 6250 50  0001 C CNN
+F 3 "~" H 600 6250 50  0001 C CNN
+	1    600  6250
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
