@@ -686,11 +686,9 @@ Wire Wire Line
 Connection ~ 5250 7000
 Wire Wire Line
 	5250 7100 5250 7000
-Wire Wire Line
-	5750 6000 5650 6000
 Text GLabel 9250 4100 0    50   Input ~ 10
 SPEED_CONTROL_SWITCH
-Text GLabel 5750 6000 2    50   Input ~ 10
+Text GLabel 6750 6200 3    50   Input ~ 10
 SPEED_CONTROL_SWITCH
 Text GLabel 7050 3200 0    50   Input ~ 10
 OIL_PRESSURE_IN
@@ -919,26 +917,18 @@ Wire Wire Line
 $Comp
 L Misc:D_Zener_SOT-23 D1
 U 1 1 618B7D29
-P 6900 6300
-F 0 "D1" H 6900 6093 50  0000 C CNN
-F 1 "10V" H 6900 6184 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" V 6900 6300 50  0001 C CNN
-F 3 "~" V 6900 6300 50  0001 C CNN
-F 4 "BZX84-C10,215" H 6900 6300 50  0001 C CNN "Manufacturer"
-F 5 "Nexperia USA Inc." H 6900 6300 50  0001 C CNN "Manufacturer#"
-F 6 "1727-2935-1-ND" H 6900 6300 50  0001 C CNN "digikey#"
-	1    6900 6300
-	-1   0    0    1   
+P 6300 6500
+F 0 "D1" H 6300 6293 50  0000 C CNN
+F 1 "10V" H 6300 6384 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" V 6300 6500 50  0001 C CNN
+F 3 "~" V 6300 6500 50  0001 C CNN
+F 4 "BZX84-C10,215" H 6300 6500 50  0001 C CNN "Manufacturer"
+F 5 "Nexperia USA Inc." H 6300 6500 50  0001 C CNN "Manufacturer#"
+F 6 "1727-2935-1-ND" H 6300 6500 50  0001 C CNN "digikey#"
+	1    6300 6500
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7000 6300 7100 6300
-Wire Wire Line
-	6500 6200 6500 6300
-Wire Wire Line
-	6500 6300 6800 6300
-Wire Wire Line
-	5950 6200 6500 6200
-Text GLabel 7100 6300 2    50   Input ~ 0
+Text GLabel 6300 6800 3    50   Input ~ 0
 ASD_12V_IN
 $Comp
 L Connector_Generic:Conn_01x02 J2
@@ -1072,6 +1062,47 @@ F 1 "MountingHole" H 700 6205 50  0000 L CNN
 F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 600 6250 50  0001 C CNN
 F 3 "~" H 600 6250 50  0001 C CNN
 	1    600  6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 6200 6300 6200
+Wire Wire Line
+	6300 6800 6300 6600
+Wire Wire Line
+	6300 6400 6300 6200
+Wire Wire Line
+	6750 6200 6750 6000
+Wire Wire Line
+	5650 6000 6750 6000
+$Comp
+L Device:R_Small R?
+U 1 1 6164377D
+P 6750 5800
+AR Path="/615FCF77/6164377D" Ref="R?"  Part="1" 
+AR Path="/6164377D" Ref="R19"  Part="1" 
+F 0 "R19" H 6820 5846 50  0000 L CNN
+F 1 "10k" H 6820 5755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6680 5800 50  0001 C CNN
+F 3 "~" H 6750 5800 50  0001 C CNN
+F 4 "Yageo" H 6750 5800 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 6750 5800 50  0001 C CNN "Manufacturer#"
+	1    6750 5800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6750 6000 6750 5900
+Wire Wire Line
+	6750 5700 6750 5600
+Connection ~ 6750 6000
+$Comp
+L power:VDDA #PWR0104
+U 1 1 6164E774
+P 6750 5600
+F 0 "#PWR0104" H 6750 5450 50  0001 C CNN
+F 1 "VDDA" V 6768 5728 50  0000 L CNN
+F 2 "" H 6750 5600 50  0001 C CNN
+F 3 "" H 6750 5600 50  0001 C CNN
+	1    6750 5600
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
