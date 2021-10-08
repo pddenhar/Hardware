@@ -1105,4 +1105,8 @@ F 3 "" H 6750 5600 50  0001 C CNN
 	1    6750 5600
 	1    0    0    -1  
 $EndComp
+Text GLabel 5750 6300 2    50   Input ~ 0
+CLT_Sensor
+Wire Wire Line
+	5750 6300 5650 6300
 $EndSCHEMATC
