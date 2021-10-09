@@ -362,7 +362,7 @@ U 1 1 615A235D
 P 8050 1950
 F 0 "U2" H 8300 2300 50  0000 C CNN
 F 1 "USBLC6-2SC6" H 7600 2300 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-666" H 8050 1450 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8050 1450 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 8250 2300 50  0001 C CNN
 F 4 "STMicroelectronics" H 8050 1950 50  0001 C CNN "Manufacturer"
 F 5 "USBLC6-2SC6" H 8050 1950 50  0001 C CNN "Manufacturer#"
