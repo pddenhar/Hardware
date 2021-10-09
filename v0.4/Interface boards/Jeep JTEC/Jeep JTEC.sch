@@ -369,17 +369,17 @@ Text GLabel 1550 4050 2    50   Input ~ 0
 HC-1-OUT
 Text GLabel 4900 2800 0    50   Output ~ 0
 STEP-A1
-Text GLabel 4900 1900 0    50   Output ~ 0
+Text GLabel 4900 2900 0    50   Output ~ 0
 STEP-A2
 Wire Wire Line
 	5000 2800 4900 2800
 Wire Wire Line
 	4900 1900 5000 1900
-Text GLabel 4900 2000 0    50   Output ~ 0
+Text GLabel 4900 1900 0    50   Output ~ 0
 STEP-B1
 Wire Wire Line
 	4900 2000 5000 2000
-Text GLabel 4900 2900 0    50   Output ~ 0
+Text GLabel 4900 2000 0    50   Output ~ 0
 STEP-B2
 Wire Wire Line
 	5000 2900 4900 2900
