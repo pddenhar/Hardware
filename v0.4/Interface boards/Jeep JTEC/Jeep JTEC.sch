@@ -45,7 +45,7 @@ L power:VDDA #PWR02
 U 1 1 5CF9256D
 P 1400 2300
 F 0 "#PWR02" H 1400 2150 50  0001 C CNN
-F 1 "VDDA" V 1418 2428 50  0000 L CNN
+F 1 "VDDA" V 1400 2450 50  0000 L CNN
 F 2 "" H 1400 2300 50  0001 C CNN
 F 3 "" H 1400 2300 50  0001 C CNN
 	1    1400 2300
@@ -157,7 +157,7 @@ L power:VDDA #PWR05
 U 1 1 5CF58939
 P 2150 2300
 F 0 "#PWR05" H 2150 2150 50  0001 C CNN
-F 1 "VDDA" V 2168 2428 50  0000 L CNN
+F 1 "VDDA" V 2150 2450 50  0000 L CNN
 F 2 "" H 2150 2300 50  0001 C CNN
 F 3 "" H 2150 2300 50  0001 C CNN
 	1    2150 2300
@@ -268,18 +268,18 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x32 C3
 U 1 1 61568D86
-P 9550 2500
-F 0 "C3" H 9630 2492 50  0000 L CNN
-F 1 "Conn_01x32" H 9630 2401 50  0000 L CNN
-F 2 "Connector_Automotive:mopar_32pin_pcm" H 9550 2500 50  0001 C CNN
-F 3 "~" H 9550 2500 50  0001 C CNN
-	1    9550 2500
+P 9450 2500
+F 0 "C3" H 9530 2492 50  0000 L CNN
+F 1 "Conn_01x32" H 9530 2401 50  0000 L CNN
+F 2 "Connector_Automotive:mopar_32pin_pcm" H 9450 2500 50  0001 C CNN
+F 3 "~" H 9450 2500 50  0001 C CNN
+	1    9450 2500
 	1    0    0    -1  
 $EndComp
-Text GLabel 9200 2800 0    50   Output ~ 0
+Text GLabel 9100 2800 0    50   Output ~ 0
 FUELPUMP-OUT
 Wire Wire Line
-	9350 2800 9200 2800
+	9250 2800 9100 2800
 Wire Wire Line
 	7050 1300 7150 1300
 Wire Wire Line
@@ -330,7 +330,7 @@ L power:VDDA #PWR08
 U 1 1 615BDD6F
 P 4900 2600
 F 0 "#PWR08" H 4900 2450 50  0001 C CNN
-F 1 "VDDA" V 4918 2728 50  0000 L CNN
+F 1 "VDDA" V 4900 2750 50  0000 L CNN
 F 2 "" H 4900 2600 50  0001 C CNN
 F 3 "" H 4900 2600 50  0001 C CNN
 	1    4900 2600
@@ -347,7 +347,7 @@ L power:VDDA #PWR011
 U 1 1 615C91A8
 P 7050 4000
 F 0 "#PWR011" H 7050 3850 50  0001 C CNN
-F 1 "VDDA" V 7068 4128 50  0000 L CNN
+F 1 "VDDA" V 7050 4150 50  0000 L CNN
 F 2 "" H 7050 4000 50  0001 C CNN
 F 3 "" H 7050 4000 50  0001 C CNN
 	1    7050 4000
@@ -387,7 +387,7 @@ Text Notes 4800 800  0    200  ~ 0
 Black
 Text Notes 6900 800  0    200  ~ 0
 White
-Text Notes 9050 800  0    200  ~ 0
+Text Notes 8950 800  0    200  ~ 0
 Gray
 Text GLabel 4900 2700 0    50   Input ~ 0
 CAM-IN
@@ -397,20 +397,20 @@ Text GLabel 4900 1700 0    50   Input ~ 0
 CRANK-IN
 Wire Wire Line
 	5000 1700 4900 1700
-Text Notes 4150 2000 2    50   ~ 0
+Text Notes 4250 2000 2    50   ~ 0
 CRANK and CAM sensors\nare hall effect on JTEC 4.0L [1]\n\nPull-up is required
 Text Notes 550  7650 0    39   ~ 0
 Reference 1: https://www.cherokeeforum.com/f67/guide-megasquirt-4-0-a-254321/\nReference 2: https://mopar1973man.com/cummins/articles.html/24-valve-2nd-generation_50/51_engine/electrical/ccd-chrysler-collision-detection-data-bus-r329/\nReference 3: https://azxiana.io/2017/04/09/creating-a-chrysler-pcmecu-simulator/
 Text GLabel 1350 4500 0    50   Input ~ 0
 ASD_COIL_OUT
-Text GLabel 9250 1800 0    50   Output ~ 0
+Text GLabel 9150 1800 0    50   Output ~ 0
 O2-RELAY-DOWN
 Wire Wire Line
-	9250 1800 9350 1800
-Text GLabel 9250 1700 0    50   Output ~ 0
+	9150 1800 9250 1800
+Text GLabel 9150 1700 0    50   Output ~ 0
 O2-RELAY-UP
 Wire Wire Line
-	9250 1700 9350 1700
+	9150 1700 9250 1700
 Text GLabel 1350 4700 0    50   Input ~ 0
 O2-RELAY-DOWN
 Text GLabel 4900 1100 0    50   Input ~ 0
@@ -480,10 +480,10 @@ NoConn ~ 5000 3700
 NoConn ~ 5000 3900
 NoConn ~ 5000 2200
 NoConn ~ 5000 2300
-Text GLabel 9250 1200 0    50   Output ~ 0
+Text GLabel 9150 1200 0    50   Output ~ 0
 ASD_COIL_OUT
 Wire Wire Line
-	9350 1200 9250 1200
+	9250 1200 9150 1200
 NoConn ~ 5000 1200
 NoConn ~ 5000 1400
 NoConn ~ 5000 1800
@@ -518,53 +518,53 @@ NoConn ~ 7150 3700
 NoConn ~ 7150 3800
 NoConn ~ 7150 3900
 NoConn ~ 7150 4100
-Text GLabel 9250 1100 0    50   Output ~ 0
+Text GLabel 9150 1100 0    50   Output ~ 0
 FAN-OUT
 Wire Wire Line
-	9350 1100 9250 1100
-NoConn ~ 9350 1500
-NoConn ~ 9350 1600
-NoConn ~ 9350 2500
-NoConn ~ 9350 2600
-NoConn ~ 9350 2700
-NoConn ~ 9350 3000
-NoConn ~ 9350 4000
-NoConn ~ 9350 3800
-Text Notes 9650 3400 0    50   ~ 0
+	9250 1100 9150 1100
+NoConn ~ 9250 1500
+NoConn ~ 9250 1600
+NoConn ~ 9250 2500
+NoConn ~ 9250 2600
+NoConn ~ 9250 2700
+NoConn ~ 9250 3000
+NoConn ~ 9250 4000
+NoConn ~ 9250 3800
+Text Notes 9550 3400 0    50   ~ 0
 Brake lamp switch sense\nis normally grounded
-Text GLabel 9250 2000 0    50   Output ~ 0
+Text GLabel 9150 2000 0    50   Output ~ 0
 CRUISE_PWR_OUT
 Wire Wire Line
-	9250 2000 9350 2000
+	9150 2000 9250 2000
 Text GLabel 1350 3600 0    50   Input ~ 0
 CRUISE_PWR_OUT
 Wire Wire Line
 	1350 3600 1450 3600
 Wire Wire Line
-	9250 1300 9350 1300
+	9150 1300 9250 1300
 Wire Wire Line
-	9250 1400 9350 1400
+	9150 1400 9250 1400
 Wire Wire Line
-	9250 3300 9350 3300
+	9150 3300 9250 3300
 Wire Wire Line
-	9250 3700 9350 3700
+	9150 3700 9250 3700
 Wire Wire Line
-	9250 3900 9350 3900
+	9150 3900 9250 3900
 Wire Wire Line
-	9250 4100 9350 4100
+	9150 4100 9250 4100
 Wire Wire Line
-	9250 3100 9350 3100
+	9150 3100 9250 3100
 Wire Wire Line
-	9250 3200 9350 3200
+	9150 3200 9250 3200
 Wire Wire Line
-	9350 1000 9250 1000
-Text GLabel 9250 2100 0    50   Input ~ 0
+	9250 1000 9150 1000
+Text GLabel 9150 2100 0    50   Input ~ 0
 ASD_12V_IN
 Wire Wire Line
-	9250 2100 9350 2100
+	9150 2100 9250 2100
 Text GLabel 1550 3600 2    50   Input ~ 0
 ASD_12V_IN
-Text GLabel 9250 3400 0    50   Output ~ 0
+Text GLabel 9150 3400 0    50   Output ~ 0
 GENERATOR_12v+
 Wire Wire Line
 	7050 1900 7150 1900
@@ -596,7 +596,7 @@ Wire Wire Line
 Text GLabel 7050 1900 0    50   Output ~ 10
 GENERATOR_GND
 Wire Wire Line
-	9250 3400 9350 3400
+	9150 3400 9250 3400
 Text GLabel 1450 4200 0    50   Input ~ 0
 GENERATOR_GND
 Text GLabel 1550 4200 2    50   Input ~ 0
@@ -604,32 +604,32 @@ HC-2-OUT
 Wire Wire Line
 	1550 4200 1450 4200
 Wire Wire Line
-	9250 3500 9350 3500
-NoConn ~ 9350 3600
-Text GLabel 9200 2900 0    50   Output ~ 0
+	9150 3500 9250 3500
+NoConn ~ 9250 3600
+Text GLabel 9100 2900 0    50   Output Italic 0
 EVAP_SOLENOID
 Wire Wire Line
-	9200 2900 9350 2900
-Text GLabel 9250 2200 0    50   Input Italic 0
+	9100 2900 9250 2900
+Text GLabel 9150 2200 0    50   Input Italic 0
 RAD_FAN_REQUEST
 Wire Wire Line
-	9250 2200 9350 2200
-Text GLabel 9250 2300 0    50   Input Italic 0
+	9150 2200 9250 2200
+Text GLabel 9150 2300 0    50   Input Italic 0
 LEAK_DETECT_SWITCH_SENSE
-Text GLabel 9250 2400 0    50   Input Italic 0
+Text GLabel 9150 2400 0    50   Input Italic 0
 BATTERY_TEMP
 Wire Wire Line
-	9250 2300 9350 2300
+	9150 2300 9250 2300
 Wire Wire Line
-	9250 2400 9350 2400
-Text GLabel 9250 1900 0    50   Output Italic 0
+	9150 2400 9250 2400
+Text GLabel 9150 1900 0    50   Output Italic 0
 LEAK_DETECT_SOLENOID
 Wire Wire Line
-	9250 1900 9350 1900
+	9150 1900 9250 1900
 Text Notes 7350 4600 0    50   Italic 0
 Italic labels indicate signals that are not used\non this breakout board
 $Comp
-L MCU_Module:Arduino_Nano_v3.x A1
+L Shields:Arduino_Nano_v3.x A1
 U 1 1 6153DDCF
 P 5150 5900
 F 0 "A1" H 5500 4950 50  0000 C CNN
@@ -643,11 +643,11 @@ Wire Wire Line
 	4650 5600 3550 5600
 Wire Wire Line
 	4650 6500 3550 6500
-Text GLabel 9250 3700 0    50   BiDi ~ 10
+Text GLabel 9150 3700 0    50   BiDi ~ 10
 CCD-
-Text GLabel 9250 3900 0    50   BiDi ~ 10
+Text GLabel 9150 3900 0    50   BiDi ~ 10
 CCD+
-Text GLabel 9250 3500 0    50   Input ~ 10
+Text GLabel 9150 3500 0    50   Input ~ 10
 FUEL_LEVEL
 Text GLabel 5750 5900 2    50   Input ~ 10
 FUEL_LEVEL
@@ -658,7 +658,7 @@ L power:VDDA #PWR017
 U 1 1 61616827
 P 5350 4800
 F 0 "#PWR017" H 5350 4650 50  0001 C CNN
-F 1 "VDDA" V 5368 4928 50  0000 L CNN
+F 1 "VDDA" V 5350 4950 50  0000 L CNN
 F 2 "" H 5350 4800 50  0001 C CNN
 F 3 "" H 5350 4800 50  0001 C CNN
 	1    5350 4800
@@ -686,7 +686,7 @@ Wire Wire Line
 Connection ~ 5250 7000
 Wire Wire Line
 	5250 7100 5250 7000
-Text GLabel 9250 4100 0    50   Input ~ 10
+Text GLabel 9150 4100 0    50   Input ~ 10
 SPEED_CONTROL_SWITCH
 Text GLabel 6750 6200 3    50   Input ~ 10
 SPEED_CONTROL_SWITCH
@@ -742,15 +742,15 @@ Text GLabel 4900 1500 0    50   Input Italic 0
 PNP_SW
 Wire Wire Line
 	4900 1500 5000 1500
-Text Notes 9650 3200 0    50   ~ 0
+Text Notes 9550 3200 0    50   ~ 0
 AC_SELECT grounded when on
-Text Notes 9650 3100 0    50   ~ 0
-Pressure switch grounded when ok
-Text Notes 9650 1000 0    50   ~ 0
+Text Notes 9550 3100 0    50   ~ 0
+Pressure switch grounded when on and ok
+Text Notes 9550 1000 0    50   ~ 0
 AC clutch grounded = On
-Text GLabel 9250 1000 0    50   Input ~ 0
+Text GLabel 9150 1000 0    50   Input ~ 0
 AC_CLUTCH_OUT
-Text GLabel 9250 3100 0    50   Input ~ 0
+Text GLabel 9150 3100 0    50   Input ~ 0
 AC_PRESSURE_SWITCH
 Text GLabel 1450 4900 0    50   Input ~ 0
 AC_PRESSURE_SWITCH
@@ -758,9 +758,9 @@ Text GLabel 1550 4900 2    50   Input ~ 0
 AC_CLUTCH_OUT
 Wire Wire Line
 	1450 4900 1550 4900
-Text GLabel 9250 3200 0    50   Input Italic 0
+Text GLabel 9150 3200 0    50   Input Italic 0
 AC_SELECT
-Text GLabel 9250 3300 0    50   Input ~ 10
+Text GLabel 9150 3300 0    50   Input ~ 10
 BRAKE_LAMP_SWITCH
 Text GLabel 2950 5700 0    50   Input ~ 10
 BRAKE_LAMP_SWITCH
@@ -799,7 +799,7 @@ F 3 "" H 3100 5400 50  0001 C CNN
 	1    3100 5400
 	1    0    0    -1  
 $EndComp
-Text Notes 9650 1400 0    50   ~ 0
+Text Notes 9550 1400 0    50   ~ 0
 Solenoid grounded = On
 Wire Wire Line
 	10500 5400 10600 5400
@@ -807,9 +807,9 @@ Wire Wire Line
 	10500 5500 10600 5500
 Wire Wire Line
 	10500 5600 10600 5600
-Text GLabel 9250 1300 0    50   Output Italic 0
+Text GLabel 9150 1300 0    50   Output Italic 0
 CRUISE_VAC_OUT
-Text GLabel 9250 1400 0    50   Output Italic 0
+Text GLabel 9150 1400 0    50   Output Italic 0
 CRUISE_VENT_OUT
 Text GLabel 10600 5800 2    50   Output Italic 0
 CRUISE_VAC_OUT
@@ -868,27 +868,27 @@ Wire Wire Line
 $Comp
 L Device:R_Small R?
 U 1 1 618ADDF1
-P 5950 6600
+P 5800 6600
 AR Path="/615FCF77/618ADDF1" Ref="R?"  Part="1" 
 AR Path="/618ADDF1" Ref="R18"  Part="1" 
-F 0 "R18" H 6020 6646 50  0000 L CNN
-F 1 "10k" H 6020 6555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5880 6600 50  0001 C CNN
-F 3 "~" H 5950 6600 50  0001 C CNN
-F 4 "Yageo" H 5950 6600 50  0001 C CNN "Manufacturer"
-F 5 "RC0805FR-0710KL" H 5950 6600 50  0001 C CNN "Manufacturer#"
-	1    5950 6600
+F 0 "R18" H 5870 6646 50  0000 L CNN
+F 1 "10k" H 5870 6555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5730 6600 50  0001 C CNN
+F 3 "~" H 5800 6600 50  0001 C CNN
+F 4 "Yageo" H 5800 6600 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 5800 6600 50  0001 C CNN "Manufacturer#"
+	1    5800 6600
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	5950 6200 5950 6500
+	5800 6200 5800 6500
 Wire Wire Line
-	5950 6700 5950 7000
+	5800 6700 5800 7000
 Wire Wire Line
-	5950 7000 5250 7000
+	5800 7000 5250 7000
 Wire Wire Line
-	5950 6200 5650 6200
-Connection ~ 5950 6200
+	5800 6200 5650 6200
+Connection ~ 5800 6200
 Wire Wire Line
 	2950 6300 3050 6300
 Text GLabel 3050 6300 2    50   BiDi ~ 0
@@ -917,18 +917,18 @@ Wire Wire Line
 $Comp
 L Misc:D_Zener_SOT-23 D1
 U 1 1 618B7D29
-P 6300 6500
-F 0 "D1" H 6300 6293 50  0000 C CNN
-F 1 "10V" H 6300 6384 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" V 6300 6500 50  0001 C CNN
-F 3 "~" V 6300 6500 50  0001 C CNN
-F 4 "BZX84-C10,215" H 6300 6500 50  0001 C CNN "Manufacturer"
-F 5 "Nexperia USA Inc." H 6300 6500 50  0001 C CNN "Manufacturer#"
-F 6 "1727-2935-1-ND" H 6300 6500 50  0001 C CNN "digikey#"
-	1    6300 6500
+P 6400 6500
+F 0 "D1" H 6400 6293 50  0000 C CNN
+F 1 "10V" H 6400 6384 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" V 6400 6500 50  0001 C CNN
+F 3 "~" V 6400 6500 50  0001 C CNN
+F 4 "BZX84-C10,215" H 6400 6500 50  0001 C CNN "Manufacturer"
+F 5 "Nexperia USA Inc." H 6400 6500 50  0001 C CNN "Manufacturer#"
+F 6 "1727-2935-1-ND" H 6400 6500 50  0001 C CNN "digikey#"
+	1    6400 6500
 	0    -1   -1   0   
 $EndComp
-Text GLabel 6300 6800 3    50   Input ~ 0
+Text GLabel 6400 6800 3    50   Input ~ 0
 ASD_12V_IN
 $Comp
 L Connector_Generic:Conn_01x02 J2
@@ -1065,11 +1065,11 @@ F 3 "~" H 600 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 6200 6300 6200
+	5800 6200 6400 6200
 Wire Wire Line
-	6300 6800 6300 6600
+	6400 6800 6400 6600
 Wire Wire Line
-	6300 6400 6300 6200
+	6400 6400 6400 6200
 Wire Wire Line
 	6750 6200 6750 6000
 Wire Wire Line
@@ -1105,8 +1105,122 @@ F 3 "" H 6750 5600 50  0001 C CNN
 	1    6750 5600
 	1    0    0    -1  
 $EndComp
-Text GLabel 5750 6300 2    50   Input ~ 0
+Text GLabel 5900 6300 2    50   Input ~ 0
 CLT_Sensor
 Wire Wire Line
-	5750 6300 5650 6300
+	5900 6300 5650 6300
+NoConn ~ 9250 1900
+NoConn ~ 9250 2200
+NoConn ~ 9250 2300
+NoConn ~ 9250 2400
+NoConn ~ 5000 3400
+NoConn ~ 5000 3500
+NoConn ~ 5000 3800
+NoConn ~ 5650 5300
+NoConn ~ 5250 4900
+NoConn ~ 5050 4900
+NoConn ~ 4650 5300
+NoConn ~ 4650 5400
+NoConn ~ 5650 5700
+NoConn ~ 5650 5400
+NoConn ~ 5650 6600
+NoConn ~ 5650 6500
+NoConn ~ 4650 6600
+NoConn ~ 4650 6300
+NoConn ~ 4650 6200
+NoConn ~ 4650 6100
+NoConn ~ 5000 2100
+NoConn ~ 5000 1500
+NoConn ~ 9250 2900
+NoConn ~ 5000 3100
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 617608F2
+P 2450 4500
+F 0 "#FLG0101" H 2450 4575 50  0001 C CNN
+F 1 "PWR_FLAG" H 2450 4673 50  0000 C CNN
+F 2 "" H 2450 4500 50  0001 C CNN
+F 3 "~" H 2450 4500 50  0001 C CNN
+	1    2450 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 2450 4600 3    50   Input ~ 0
+ASD_12V_IN
+Wire Wire Line
+	2450 4600 2450 4500
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6176D515
+P 2850 4500
+F 0 "#FLG0102" H 2850 4575 50  0001 C CNN
+F 1 "PWR_FLAG" H 2850 4673 50  0000 C CNN
+F 2 "" H 2850 4500 50  0001 C CNN
+F 3 "~" H 2850 4500 50  0001 C CNN
+	1    2850 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4600 2850 4500
+$Comp
+L power:GND #PWR0105
+U 1 1 61782A6E
+P 2850 4600
+F 0 "#PWR0105" H 2850 4350 50  0001 C CNN
+F 1 "GND" V 2855 4472 50  0000 R CNN
+F 2 "" H 2850 4600 50  0001 C CNN
+F 3 "" H 2850 4600 50  0001 C CNN
+	1    2850 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 61783289
+P 2450 3800
+F 0 "#FLG0103" H 2450 3875 50  0001 C CNN
+F 1 "PWR_FLAG" H 2450 3973 50  0000 C CNN
+F 2 "" H 2450 3800 50  0001 C CNN
+F 3 "~" H 2450 3800 50  0001 C CNN
+	1    2450 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3900 2450 3800
+$Comp
+L power:VDDA #PWR0106
+U 1 1 6178DD71
+P 2450 3900
+F 0 "#PWR0106" H 2450 3750 50  0001 C CNN
+F 1 "VDDA" V 2468 4028 50  0000 L CNN
+F 2 "" H 2450 3900 50  0001 C CNN
+F 3 "" H 2450 3900 50  0001 C CNN
+	1    2450 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 6178E69C
+P 2850 3800
+F 0 "#FLG0104" H 2850 3875 50  0001 C CNN
+F 1 "PWR_FLAG" H 2850 3973 50  0000 C CNN
+F 2 "" H 2850 3800 50  0001 C CNN
+F 3 "~" H 2850 3800 50  0001 C CNN
+	1    2850 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3900 2850 3800
+$Comp
+L power:GNDA #PWR0107
+U 1 1 617991D6
+P 2850 3900
+F 0 "#PWR0107" H 2850 3650 50  0001 C CNN
+F 1 "GNDA" V 2855 3772 50  0000 R CNN
+F 2 "" H 2850 3900 50  0001 C CNN
+F 3 "" H 2850 3900 50  0001 C CNN
+	1    2850 3900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1550 1800
+NoConn ~ 5650 6400
+NoConn ~ 9250 3200
 $EndSCHEMATC

@@ -14,197 +14,197 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	1800 2050 1900 2050
+	1800 2250 1900 2250
 Wire Wire Line
-	2300 1850 2300 1750
+	2300 1650 2300 1550
 Wire Wire Line
-	1900 2150 1900 2050
-Connection ~ 1900 2050
+	1900 2350 1900 2250
+Connection ~ 1900 2250
 Wire Wire Line
-	1900 2050 2000 2050
+	1900 2250 2000 2250
 Wire Wire Line
-	1900 2450 1900 2550
+	1900 2650 1900 2750
 Wire Wire Line
-	1900 2550 2300 2550
+	1900 2750 2300 2750
 Wire Wire Line
-	2300 2550 2300 2650
+	2300 2750 2300 2850
 Wire Wire Line
-	2300 2250 2300 2550
-Connection ~ 2300 2550
+	2300 2450 2300 2750
+Connection ~ 2300 2750
 Wire Wire Line
-	3600 2050 3700 2050
+	3600 2250 3700 2250
 Wire Wire Line
-	4100 1850 4100 1750
+	4100 2050 4100 1950
 Wire Wire Line
-	3700 2150 3700 2050
-Connection ~ 3700 2050
+	3700 2350 3700 2250
+Connection ~ 3700 2250
 Wire Wire Line
-	3700 2050 3800 2050
+	3700 2250 3800 2250
 Wire Wire Line
-	3700 2450 3700 2550
+	3700 2650 3700 2750
 Wire Wire Line
-	3700 2550 4100 2550
+	3700 2750 4100 2750
 Wire Wire Line
-	4100 2550 4100 2650
+	4100 2750 4100 2850
 Wire Wire Line
-	4100 2250 4100 2550
-Connection ~ 4100 2550
+	4100 2450 4100 2750
+Connection ~ 4100 2750
 Wire Wire Line
-	5350 2050 5450 2050
+	5350 2250 5450 2250
 Wire Wire Line
-	5850 1850 5850 1750
+	5850 2050 5850 1950
 Wire Wire Line
-	5450 2150 5450 2050
-Connection ~ 5450 2050
+	5450 2350 5450 2250
+Connection ~ 5450 2250
 Wire Wire Line
-	5450 2050 5550 2050
+	5450 2250 5550 2250
 Wire Wire Line
-	5450 2450 5450 2550
+	5450 2650 5450 2750
 Wire Wire Line
-	5450 2550 5850 2550
+	5450 2750 5850 2750
 Wire Wire Line
-	5850 2550 5850 2650
+	5850 2750 5850 2850
 $Comp
 L Transistor_FET:IRF540N Q?
 U 1 1 616A5EE0
-P 2200 2050
+P 2200 2250
 AR Path="/616A5EE0" Ref="Q?"  Part="1" 
 AR Path="/6169594B/616A5EE0" Ref="Q3"  Part="1" 
-F 0 "Q3" H 2405 2096 50  0000 L CNN
-F 1 "IRF540NPBF" H 2405 2005 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2450 1975 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 2200 2050 50  0001 L CNN
-F 4 "Infineon" H 2200 2050 50  0001 C CNN "Manufacturer"
-F 5 "IRF540NPBF" H 2200 2050 50  0001 C CNN "Manufacturer#"
-	1    2200 2050
+F 0 "Q3" H 2405 2296 50  0000 L CNN
+F 1 "IRF540NPBF" H 2405 2205 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2450 2175 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 2200 2250 50  0001 L CNN
+F 4 "Infineon" H 2200 2250 50  0001 C CNN "Manufacturer"
+F 5 "IRF540NPBF" H 2200 2250 50  0001 C CNN "Manufacturer#"
+	1    2200 2250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 616A5EE6
-P 2300 2650
+P 2300 2850
 AR Path="/616A5EE6" Ref="#PWR?"  Part="1" 
 AR Path="/6169594B/616A5EE6" Ref="#PWR027"  Part="1" 
-F 0 "#PWR027" H 2300 2400 50  0001 C CNN
-F 1 "GND" V 2305 2522 50  0000 R CNN
-F 2 "" H 2300 2650 50  0001 C CNN
-F 3 "" H 2300 2650 50  0001 C CNN
-	1    2300 2650
+F 0 "#PWR027" H 2300 2600 50  0001 C CNN
+F 1 "GND" V 2305 2722 50  0000 R CNN
+F 2 "" H 2300 2850 50  0001 C CNN
+F 3 "" H 2300 2850 50  0001 C CNN
+	1    2300 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 616A5EF0
-P 1900 2300
+P 1900 2500
 AR Path="/615FCF77/616A5EF0" Ref="R?"  Part="1" 
 AR Path="/616A5EF0" Ref="R?"  Part="1" 
 AR Path="/6169594B/616A5EF0" Ref="R12"  Part="1" 
-F 0 "R12" H 1970 2346 50  0000 L CNN
-F 1 "10k" H 1970 2255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1830 2300 50  0001 C CNN
-F 3 "~" H 1900 2300 50  0001 C CNN
-F 4 "Yageo" H 1900 2300 50  0001 C CNN "Manufacturer"
-F 5 "RC0805FR-0710KL" H 1900 2300 50  0001 C CNN "Manufacturer#"
-	1    1900 2300
+F 0 "R12" H 1970 2546 50  0000 L CNN
+F 1 "10k" H 1970 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1830 2500 50  0001 C CNN
+F 3 "~" H 1900 2500 50  0001 C CNN
+F 4 "Yageo" H 1900 2500 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 1900 2500 50  0001 C CNN "Manufacturer#"
+	1    1900 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_FET:IRF540N Q?
 U 1 1 616A5EFE
-P 4000 2050
+P 4000 2250
 AR Path="/616A5EFE" Ref="Q?"  Part="1" 
 AR Path="/6169594B/616A5EFE" Ref="Q5"  Part="1" 
-F 0 "Q5" H 4205 2096 50  0000 L CNN
-F 1 "IRF540NPBF" H 4205 2005 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4250 1975 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 4000 2050 50  0001 L CNN
-F 4 "Infineon" H 4000 2050 50  0001 C CNN "Manufacturer"
-F 5 "IRF540NPBF" H 4000 2050 50  0001 C CNN "Manufacturer#"
-	1    4000 2050
+F 0 "Q5" H 4205 2296 50  0000 L CNN
+F 1 "IRF540NPBF" H 4205 2205 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 4250 2175 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 4000 2250 50  0001 L CNN
+F 4 "Infineon" H 4000 2250 50  0001 C CNN "Manufacturer"
+F 5 "IRF540NPBF" H 4000 2250 50  0001 C CNN "Manufacturer#"
+	1    4000 2250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 616A5F04
-P 4100 2650
+P 4100 2850
 AR Path="/616A5F04" Ref="#PWR?"  Part="1" 
 AR Path="/6169594B/616A5F04" Ref="#PWR029"  Part="1" 
-F 0 "#PWR029" H 4100 2400 50  0001 C CNN
-F 1 "GND" V 4105 2522 50  0000 R CNN
-F 2 "" H 4100 2650 50  0001 C CNN
-F 3 "" H 4100 2650 50  0001 C CNN
-	1    4100 2650
+F 0 "#PWR029" H 4100 2600 50  0001 C CNN
+F 1 "GND" V 4105 2722 50  0000 R CNN
+F 2 "" H 4100 2850 50  0001 C CNN
+F 3 "" H 4100 2850 50  0001 C CNN
+	1    4100 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 616A5F0E
-P 3700 2300
+P 3700 2500
 AR Path="/615FCF77/616A5F0E" Ref="R?"  Part="1" 
 AR Path="/616A5F0E" Ref="R?"  Part="1" 
 AR Path="/6169594B/616A5F0E" Ref="R14"  Part="1" 
-F 0 "R14" H 3770 2346 50  0000 L CNN
-F 1 "10k" H 3770 2255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3630 2300 50  0001 C CNN
-F 3 "~" H 3700 2300 50  0001 C CNN
-F 4 "Yageo" H 3700 2300 50  0001 C CNN "Manufacturer"
-F 5 "RC0805FR-0710KL" H 3700 2300 50  0001 C CNN "Manufacturer#"
-	1    3700 2300
+F 0 "R14" H 3770 2546 50  0000 L CNN
+F 1 "10k" H 3770 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3630 2500 50  0001 C CNN
+F 3 "~" H 3700 2500 50  0001 C CNN
+F 4 "Yageo" H 3700 2500 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 3700 2500 50  0001 C CNN "Manufacturer#"
+	1    3700 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_FET:IRF540N Q?
 U 1 1 616A8D7B
-P 5750 2050
+P 5750 2250
 AR Path="/616A8D7B" Ref="Q?"  Part="1" 
 AR Path="/6169594B/616A8D7B" Ref="Q7"  Part="1" 
-F 0 "Q7" H 5955 2096 50  0000 L CNN
-F 1 "IRF540NPBF" H 5955 2005 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6000 1975 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 5750 2050 50  0001 L CNN
-F 4 "Infineon" H 5750 2050 50  0001 C CNN "Manufacturer"
-F 5 "IRF540NPBF" H 5750 2050 50  0001 C CNN "Manufacturer#"
-	1    5750 2050
+F 0 "Q7" H 5955 2296 50  0000 L CNN
+F 1 "IRF540NPBF" H 5955 2205 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6000 2175 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 5750 2250 50  0001 L CNN
+F 4 "Infineon" H 5750 2250 50  0001 C CNN "Manufacturer"
+F 5 "IRF540NPBF" H 5750 2250 50  0001 C CNN "Manufacturer#"
+	1    5750 2250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 616A8D81
-P 5850 2650
+P 5850 2850
 AR Path="/616A8D81" Ref="#PWR?"  Part="1" 
 AR Path="/6169594B/616A8D81" Ref="#PWR031"  Part="1" 
-F 0 "#PWR031" H 5850 2400 50  0001 C CNN
-F 1 "GND" V 5855 2522 50  0000 R CNN
-F 2 "" H 5850 2650 50  0001 C CNN
-F 3 "" H 5850 2650 50  0001 C CNN
-	1    5850 2650
+F 0 "#PWR031" H 5850 2600 50  0001 C CNN
+F 1 "GND" V 5855 2722 50  0000 R CNN
+F 2 "" H 5850 2850 50  0001 C CNN
+F 3 "" H 5850 2850 50  0001 C CNN
+	1    5850 2850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 616A8D8B
-P 5450 2300
+P 5450 2500
 AR Path="/615FCF77/616A8D8B" Ref="R?"  Part="1" 
 AR Path="/616A8D8B" Ref="R?"  Part="1" 
 AR Path="/6169594B/616A8D8B" Ref="R16"  Part="1" 
-F 0 "R16" H 5520 2346 50  0000 L CNN
-F 1 "10k" H 5520 2255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5380 2300 50  0001 C CNN
-F 3 "~" H 5450 2300 50  0001 C CNN
-F 4 "Yageo" H 5450 2300 50  0001 C CNN "Manufacturer"
-F 5 "RC0805FR-0710KL" H 5450 2300 50  0001 C CNN "Manufacturer#"
-	1    5450 2300
+F 0 "R16" H 5520 2546 50  0000 L CNN
+F 1 "10k" H 5520 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5380 2500 50  0001 C CNN
+F 3 "~" H 5450 2500 50  0001 C CNN
+F 4 "Yageo" H 5450 2500 50  0001 C CNN "Manufacturer"
+F 5 "RC0805FR-0710KL" H 5450 2500 50  0001 C CNN "Manufacturer#"
+	1    5450 2500
 	1    0    0    -1  
 $EndComp
-Text HLabel 1800 2050 0    50   Input ~ 0
+Text HLabel 1800 2250 0    50   Input ~ 0
 IGN-1-OUT
-Text HLabel 2300 1750 1    50   Input ~ 0
+Text HLabel 2300 1550 1    50   Input ~ 0
 IGN-1-DRIVER
-Text HLabel 3600 2050 0    50   Input ~ 0
+Text HLabel 3600 2250 0    50   Input ~ 0
 IGN-2-OUT
-Text HLabel 4100 1750 1    50   Input ~ 0
+Text HLabel 4100 1550 1    50   Input ~ 0
 IGN-2-DRIVER
-Text HLabel 5350 2050 0    50   Input ~ 0
+Text HLabel 5350 2250 0    50   Input ~ 0
 IGN-3-OUT
 Wire Notes Line
 	900  900  6650 900 
@@ -226,11 +226,11 @@ Text Notes 950  850  0    50   Italic 0
 Igniters
 Text Notes 950  3550 0    50   Italic 0
 Cruise Control Solenoids
-Text HLabel 5850 1750 1    50   Input ~ 0
+Text HLabel 5850 1550 1    50   Input ~ 0
 IGN-3-DRIVER
-Connection ~ 5850 2550
+Connection ~ 5850 2750
 Wire Wire Line
-	5850 2250 5850 2550
+	5850 2450 5850 2750
 Wire Wire Line
 	2250 4700 2350 4700
 Wire Wire Line
@@ -439,4 +439,49 @@ Wire Notes Line
 	8650 3600 5900 3600
 Text Notes 5950 3550 0    50   Italic 0
 Generator Control
+$Comp
+L Device:D_Schottky D2
+U 1 1 6183E2EB
+P 2300 1800
+F 0 "D2" V 2346 1720 50  0000 R CNN
+F 1 "D_Schottky 200v" V 2255 1720 50  0000 R CNN
+F 2 "Diode_SMD:D_SMB" H 2300 1800 50  0001 C CNN
+F 3 "~" H 2300 1800 50  0001 C CNN
+F 4 "SMC Diode Solutions" H 2300 1800 50  0001 C CNN "Manufacturer"
+F 5 "SK320BTR" H 2300 1800 50  0001 C CNN "Manufacturer#"
+	1    2300 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2300 1950 2300 2050
+Wire Wire Line
+	4100 1650 4100 1550
+$Comp
+L Device:D_Schottky D3
+U 1 1 61843DEB
+P 4100 1800
+F 0 "D3" V 4146 1720 50  0000 R CNN
+F 1 "D_Schottky 200v" V 4055 1720 50  0000 R CNN
+F 2 "Diode_SMD:D_SMB" H 4100 1800 50  0001 C CNN
+F 3 "~" H 4100 1800 50  0001 C CNN
+F 4 "SMC Diode Solutions" H 4100 1800 50  0001 C CNN "Manufacturer"
+F 5 "SK320BTR" H 4100 1800 50  0001 C CNN "Manufacturer#"
+	1    4100 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5850 1650 5850 1550
+$Comp
+L Device:D_Schottky D4
+U 1 1 61844B9D
+P 5850 1800
+F 0 "D4" V 5896 1720 50  0000 R CNN
+F 1 "D_Schottky 200v" V 5805 1720 50  0000 R CNN
+F 2 "Diode_SMD:D_SMB" H 5850 1800 50  0001 C CNN
+F 3 "~" H 5850 1800 50  0001 C CNN
+F 4 "SMC Diode Solutions" H 5850 1800 50  0001 C CNN "Manufacturer"
+F 5 "SK320BTR" H 5850 1800 50  0001 C CNN "Manufacturer#"
+	1    5850 1800
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
