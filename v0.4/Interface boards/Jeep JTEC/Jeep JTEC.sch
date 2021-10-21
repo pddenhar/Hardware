@@ -63,8 +63,8 @@ F 0 "J1" H 1800 3117 50  0000 C CNN
 F 1 "Conn_02x20_Counter_Clockwise" H 1800 3026 50  0000 C CNN
 F 2 "Connector_IDC:IDC-Header_2x20_P2.54mm_Vertical" H 1750 2000 50  0001 C CNN
 F 3 "~" H 1750 2000 50  0001 C CNN
-F 4 "302-S401" H 1750 2000 50  0001 C CNN "Manufacturer"
-F 5 "	On Shore Technology Inc." H 1750 2000 50  0001 C CNN "Manufacturer#"
+F 4 "On Shore Technology Inc." H 1750 2000 50  0001 C CNN "Manufacturer"
+F 5 "302-S401	" H 1750 2000 50  0001 C CNN "Manufacturer#"
 F 6 "ED10529-ND" H 1750 2000 50  0001 C CNN "digikey#"
 	1    1750 2000
 	1    0    0    -1  
@@ -367,12 +367,10 @@ Wire Wire Line
 	1450 4050 1550 4050
 Text GLabel 1550 4050 2    50   Input ~ 0
 HC-1-OUT
-Text GLabel 4900 2800 0    50   Output ~ 0
+Text GLabel 4000 2800 0    50   Output ~ 0
 STEP-A1
-Text GLabel 4900 2900 0    50   Output ~ 0
+Text GLabel 4000 2900 0    50   Output ~ 0
 STEP-A2
-Wire Wire Line
-	5000 2800 4900 2800
 Wire Wire Line
 	4900 1900 5000 1900
 Text GLabel 4900 1900 0    50   Output ~ 0
@@ -381,8 +379,6 @@ Wire Wire Line
 	4900 2000 5000 2000
 Text GLabel 4900 2000 0    50   Output ~ 0
 STEP-B2
-Wire Wire Line
-	5000 2900 4900 2900
 Text Notes 4800 800  0    200  ~ 0
 Black
 Text Notes 6900 800  0    200  ~ 0
@@ -922,8 +918,8 @@ F 0 "D1" H 6400 6293 50  0000 C CNN
 F 1 "10V" H 6400 6384 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" V 6400 6500 50  0001 C CNN
 F 3 "~" V 6400 6500 50  0001 C CNN
-F 4 "BZX84-C10,215" H 6400 6500 50  0001 C CNN "Manufacturer"
-F 5 "Nexperia USA Inc." H 6400 6500 50  0001 C CNN "Manufacturer#"
+F 4 "Nexperia USA Inc." H 6400 6500 50  0001 C CNN "Manufacturer"
+F 5 "BZX84-C10,215" H 6400 6500 50  0001 C CNN "Manufacturer#"
 F 6 "1727-2935-1-ND" H 6400 6500 50  0001 C CNN "digikey#"
 	1    6400 6500
 	0    -1   -1   0   
@@ -958,24 +954,6 @@ F 3 "" H 1150 5250 50  0001 C CNN
 $EndComp
 Text GLabel 1150 5350 0    50   Input ~ 0
 12V-SW
-$Comp
-L Device:Jumper_NO_Small JP3
-U 1 1 61A8768C
-P 1300 5750
-F 0 "JP3" H 1300 5935 50  0000 C CNN
-F 1 "NO" H 1300 5844 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1300 5750 50  0001 C CNN
-F 3 "~" H 1300 5750 50  0001 C CNN
-F 4 "10129378-902001BLF" H 1300 5750 50  0001 C CNN "Manufacturer"
-F 5 "Amphenol ICC (FCI)" H 1300 5750 50  0001 C CNN "Manufacturer#"
-F 6 "10129378-902001BLF-ND" H 1300 5750 50  0001 C CNN "digikey#"
-	1    1300 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1100 5750 1200 5750
-Wire Wire Line
-	1400 5750 1500 5750
 $Comp
 L power:GND #PWR0102
 U 1 1 61A9CEE4
@@ -1223,4 +1201,42 @@ $EndComp
 NoConn ~ 1550 1800
 NoConn ~ 5650 6400
 NoConn ~ 9250 3200
+$Comp
+L Device:Jumper_NO_Small JP4
+U 1 1 61645A04
+P 4200 2800
+F 0 "JP4" H 4200 2985 50  0000 C CNN
+F 1 "NO" H 4200 2894 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4200 2800 50  0001 C CNN
+F 3 "~" H 4200 2800 50  0001 C CNN
+F 4 "Amphenol ICC (FCI)" H 4200 2800 50  0001 C CNN "Manufacturer"
+F 5 "10129378-902001BLF" H 4200 2800 50  0001 C CNN "Manufacturer#"
+F 6 "10129378-902001BLF-ND" H 4200 2800 50  0001 C CNN "digikey#"
+	1    4200 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP5
+U 1 1 616469B9
+P 4200 2900
+F 0 "JP5" H 4200 3085 50  0000 C CNN
+F 1 "NO" H 4200 2994 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4200 2900 50  0001 C CNN
+F 3 "~" H 4200 2900 50  0001 C CNN
+F 4 "Amphenol ICC (FCI)" H 4200 2900 50  0001 C CNN "Manufacturer"
+F 5 "10129378-902001BLF" H 4200 2900 50  0001 C CNN "Manufacturer#"
+F 6 "10129378-902001BLF-ND" H 4200 2900 50  0001 C CNN "digikey#"
+	1    4200 2900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4000 2800 4100 2800
+Wire Wire Line
+	4300 2800 5000 2800
+Wire Wire Line
+	4000 2900 4100 2900
+Wire Wire Line
+	4300 2900 5000 2900
+Wire Wire Line
+	1100 5750 1500 5750
 $EndSCHEMATC
